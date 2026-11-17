@@ -44,17 +44,28 @@ TEXTOS_DIR = REPORTS_DIR / "textos"
 PANEL_CSV = config.DATA_DIR / "panel_diario.csv"
 DASHBOARD_URL = "https://elibman36.github.io/dolarizacion/"
 
-# Paleta (misma que el tablero, modo claro).
-INK, INK2, MUTED, GRID, AXIS = "#0b0b0b", "#52514e", "#898781", "#e1e0d9", "#c3c2b7"
-S1, S2, S3 = "#2a78d6", "#eb6834", "#1baf7a"
+# Paleta Fundar (la misma del tablero, modo claro): tinta casi negra, fondo
+# crema, series en verde oscuro, rosa y celeste. Suba = rojo, baja = verde.
+INK, INK2, MUTED, GRID, AXIS = "#161615", "#606060", "#8C8B86", "#D9D6CC", "#B8B5AC"
+S1, S2, S3 = "#1F6B4E", "#ED8688", "#87B2C1"
+SUBE, BAJA = "#C4505A", "#2E8A66"
 TRAMO_COLOR = {
-    "aprec_fuerte": "#1c5cab", "aprec": "#6da7ec", "neutral": "#a3a29b",
-    "deprec": "#ec8a89", "deprec_fuerte": "#c0302f",
+    "aprec_fuerte": "#1F6B4E", "aprec": "#6ECFA8", "neutral": "#B8B5AC",
+    "deprec": "#ED8688", "deprec_fuerte": "#C4505A",
 }
+LOGO_FUNDAR = base64.b64encode((Path(__file__).parent / "assets" / "logo_fundar_blanco.png").read_bytes()).decode()
+
+
+def _fuente_disponible() -> list[str]:
+    """Helvetica Neue si está instalada (la tipografía de Fundar); si no, la
+    sans más parecida que haya, para que matplotlib no se queje."""
+    from matplotlib import font_manager
+    hay = {f.name for f in font_manager.fontManager.ttflist}
+    return [f for f in ("Helvetica Neue", "Helvetica", "Arial", "Liberation Sans", "Inter", "DejaVu Sans") if f in hay] or ["DejaVu Sans"]
 MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 
 plt.rcParams.update({
-    "font.family": ["Inter", "DejaVu Sans"],
+    "font.family": _fuente_disponible(),
     "font.size": 8.5,
     "axes.edgecolor": AXIS, "axes.labelcolor": INK2, "axes.linewidth": 0.8,
     "axes.spines.top": False, "axes.spines.right": False, "axes.spines.left": False,
@@ -185,7 +196,7 @@ def _celda_delta(d: float, marca: str = "") -> str:
         return "<td class='num muted'>–</td>"
     if abs(d) < 0.05:
         return "<td class='num muted'>0</td>"
-    color = "#c4302b" if d > 0 else S1
+    color = SUBE if d > 0 else BAJA
     return f"<td class='num' style='color:{color}'>{'▲' if d > 0 else '▼'} {fmt(d, 1, signo=True)}{marca}</td>"
 
 
@@ -194,7 +205,7 @@ def _barra(v: float, escala: float) -> str:
         return "<td></td>"
     w = min(50, abs(v) / escala * 50)
     lado = f"left:50%;width:{w:.1f}%" if v >= 0 else f"right:50%;width:{w:.1f}%"
-    color = "#e34948" if v >= 0 else S1
+    color = SUBE if v >= 0 else BAJA
     return f"<td class='bar'><div><i style='{lado};background:{color}'></i></div></td>"
 
 
@@ -213,7 +224,7 @@ def _celda_aporte(v: float, negrita: bool = False) -> str:
         return "<td class='num muted'>–</td>"
     if abs(v) < 0.05:
         return "<td class='num muted'>0</td>"
-    color = "#c4302b" if v > 0 else S1
+    color = SUBE if v > 0 else BAJA
     b = "font-weight:700;" if negrita else ""
     return f"<td class='num' style='color:{color};{b}'>{'▲' if v > 0 else '▼'} {fmt(v, 1, signo=True)}</td>"
 
@@ -532,73 +543,81 @@ def resumen(indice, semana, dpts: dict, perfil: dict | None = None) -> list[str]
 CSS = """
 @page { size: A4; margin: 14mm 14mm 16mm; }
 * { box-sizing: border-box; }
-body { font-family: Inter, "DejaVu Sans", sans-serif; color: #0b0b0b; font-size: 9.5pt; line-height: 1.4; margin: 0; }
-h1 { font-size: 17pt; margin: 0; letter-spacing: -0.01em; }
-h2 { font-size: 11pt; margin: 0 0 2pt; }
-.sub { color: #52514e; margin: 2pt 0 0; }
-.muted, .unit { color: #898781; font-size: 7.5pt; }
-.top { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid #e1e0d9; padding-bottom: 8pt; margin-bottom: 10pt; }
-.top .meta { text-align: right; color: #52514e; font-size: 8.5pt; }
+body { font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Inter, "DejaVu Sans", sans-serif; color: #161615; font-size: 9.5pt; line-height: 1.4; margin: 0; -webkit-font-smoothing: antialiased; }
+h1 { font-size: 17pt; font-weight: 700; margin: 0; letter-spacing: -0.015em; }
+h2 { font-size: 11pt; font-weight: 700; margin: 0 0 2pt; }
+.sub { color: #606060; margin: 2pt 0 0; }
+.muted, .unit { color: #8C8B86; font-size: 7.5pt; }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12pt; background: #161615; color: #F2F2F2;
+        border-radius: 8px; padding: 10pt 13pt; margin-bottom: 10pt; }
+.top .marca { display: flex; align-items: center; gap: 12pt; }
+.top .marca img { width: 52pt; height: auto; display: block; }
+.top .titulos { border-left: 1px solid rgba(255,255,255,0.2); padding-left: 12pt; }
+.top .eyebrow { font-size: 6.5pt; letter-spacing: 0.12em; text-transform: uppercase; color: #999999; }
+.top h1 { color: #F2F2F2; }
+.top .sub { color: #D9D9D9; }
+.top .meta { text-align: right; color: #D9D9D9; font-size: 8.5pt; }
+.top .meta a { color: #6ECFA8; }
 .hero { display: grid; grid-template-columns: 52mm 1fr; gap: 8pt; margin-bottom: 8pt; }
-.card { border: 1px solid #e1e0d9; border-radius: 8px; padding: 7pt 9pt; break-inside: avoid; }
-.num-big { font-size: 36pt; font-weight: 650; line-height: 1; letter-spacing: -0.02em; margin: 6pt 0 4pt; }
-.num-big small { font-size: 13pt; color: #898781; font-weight: 500; }
+.card { background: #F4F3EE; border: 1px solid rgba(22,22,21,0.10); border-radius: 8px; padding: 7pt 9pt; break-inside: avoid; }
+.num-big { font-size: 36pt; font-weight: 700; line-height: 1; letter-spacing: -0.02em; margin: 6pt 0 4pt; }
+.num-big small { font-size: 13pt; color: #8C8B86; font-weight: 500; }
 .pill { display: inline-block; padding: 2pt 8pt; border-radius: 999px; font-weight: 600; font-size: 8.5pt; color: #fff; }
 .gauge { display: flex; gap: 1.5px; height: 7pt; margin: 9pt 0 2pt; position: relative; }
 .gauge span:first-child { border-radius: 4px 0 0 4px; } .gauge span:last-child { border-radius: 0 4px 4px 0; }
-.gauge i { position: absolute; top: -3pt; width: 2.5pt; height: 13pt; margin-left: -1.25pt; background: #0b0b0b; border-radius: 2px; box-shadow: 0 0 0 1.5px #fff; }
-.scale { display: flex; justify-content: space-between; font-size: 6.5pt; color: #898781; }
-.kv { display: grid; grid-template-columns: auto auto; gap: 2pt 8pt; margin-top: 8pt; font-size: 8pt; color: #52514e; }
-.kv b { color: #0b0b0b; text-align: right; }
+.gauge i { position: absolute; top: -3pt; width: 2.5pt; height: 13pt; margin-left: -1.25pt; background: #161615; border-radius: 2px; box-shadow: 0 0 0 1.5px #fff; }
+.scale { display: flex; justify-content: space-between; font-size: 6.5pt; color: #8C8B86; }
+.kv { display: grid; grid-template-columns: auto auto; gap: 2pt 8pt; margin-top: 8pt; font-size: 8pt; color: #606060; }
+.kv b { color: #161615; text-align: right; }
 ul.res { margin: 4pt 0 0; padding-left: 13pt; } ul.res li { margin-bottom: 3pt; }
 .chart svg, .chart img { width: 100%; height: auto; display: block; }
-.note { color: #898781; font-size: 7.5pt; margin: 0 0 4pt; }
+.note { color: #8C8B86; font-size: 7.5pt; margin: 0 0 4pt; }
 .racconto p { margin: 4pt 0 6pt; font-size: 9.5pt; line-height: 1.5; }
 .racconto ul { margin: 4pt 0 0; padding-left: 14pt; } .racconto li { margin: 2pt 0; }
 .racconto h3 { font-size: 9.5pt; margin: 8pt 0 0; }
 table.vars { width: 100%; border-collapse: collapse; font-size: 8.3pt; }
-table.vars th { text-align: left; color: #52514e; font-weight: 600; border-bottom: 1px solid #c3c2b7; padding: 4pt 4pt; }
-table.vars td { border-bottom: 1px solid #eeede8; padding: 2.1pt 4pt; vertical-align: top; }
+table.vars th { text-align: left; color: #606060; font-weight: 600; border-bottom: 1px solid #B8B5AC; padding: 4pt 4pt; }
+table.vars td { border-bottom: 1px solid #E2DFD6; padding: 2.1pt 4pt; vertical-align: top; }
 table.vars .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10pt; }
 .g-sub { grid-template-columns: 1.6fr 1fr; }
-.subs-t { margin-top: 8pt; font-size: 7.5pt; color: #898781; }
+.subs-t { margin-top: 8pt; font-size: 7.5pt; color: #8C8B86; }
 .kv.subs { margin-top: 3pt; }
 .kv.subs span { display: flex; align-items: center; gap: 4pt; }
 .kv.subs i { display: inline-block; width: 8pt; height: 2.5pt; border-radius: 1pt; }
-.kv.subs small { font-weight: 400; color: #52514e; }
-table.aportes td.comp { padding-left: 12pt; color: #52514e; }
-table.aportes tr.sub td { font-weight: 700; color: #0b0b0b; border-top: 1px solid #c3c2b7; }
-table.aportes tr.tot td { font-weight: 700; border-top: 1.5px solid #0b0b0b; }
-table.aportes tr.otras td { font-weight: 700; color: #52514e; padding-top: 8pt; border-bottom: 1px solid #c3c2b7; }
+.kv.subs small { font-weight: 400; color: #606060; }
+table.aportes td.comp { padding-left: 12pt; color: #606060; }
+table.aportes tr.sub td { font-weight: 700; color: #161615; border-top: 1px solid #B8B5AC; }
+table.aportes tr.tot td { font-weight: 700; border-top: 1.5px solid #161615; }
+table.aportes tr.otras td { font-weight: 700; color: #606060; padding-top: 8pt; border-bottom: 1px solid #B8B5AC; }
 table.aportes { font-size: 7.8pt; }
 .card.partible { break-inside: auto; }
 table.aportes tr { break-inside: avoid; }
 table.aportes thead { display: table-header-group; }
-table.aportes .muted { color: #898781; font-weight: 400; }
+table.aportes .muted { color: #8C8B86; font-weight: 400; }
 table.aportes th.bar, table.aportes td.bar { width: 12%; }
-table.aportes th.c { text-align: center; border-bottom: 1px solid #c3c2b7; padding-bottom: 2pt; }
+table.aportes th.c { text-align: center; border-bottom: 1px solid #B8B5AC; padding-bottom: 2pt; }
 table.aportes tr.grupo th { border-bottom-width: 0; }
-table.aportes tr.grupo th.c { border-bottom: 1px solid #c3c2b7; }
-table.aportes th[rowspan] { vertical-align: bottom; border-bottom: 1px solid #c3c2b7; }
+table.aportes tr.grupo th.c { border-bottom: 1px solid #B8B5AC; }
+table.aportes th[rowspan] { vertical-align: bottom; border-bottom: 1px solid #B8B5AC; }
 table.aportes td:first-child, table.aportes th:first-child { width: 25%; }
 table.aportes td.bar div { position: relative; height: 8pt; }
-table.aportes td.bar div::after { content: ""; position: absolute; left: 50%; top: -2pt; bottom: -2pt; border-left: 1px solid #c3c2b7; }
+table.aportes td.bar div::after { content: ""; position: absolute; left: 50%; top: -2pt; bottom: -2pt; border-left: 1px solid #B8B5AC; }
 table.aportes td.bar i { position: absolute; top: 0; bottom: 0; border-radius: 1.5pt; }
 .grid3 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5pt; }
 .grid3 .card { padding: 4pt 6pt; }
 .section { margin-top: 8pt; break-inside: avoid; }
 .page { break-before: page; }
-.legend { display: flex; flex-wrap: wrap; gap: 4pt 10pt; font-size: 7pt; color: #52514e; margin-top: 4pt; }
+.legend { display: flex; flex-wrap: wrap; gap: 4pt 10pt; font-size: 7pt; color: #606060; margin-top: 4pt; }
 .legend span::before { content: ""; display: inline-block; width: 8pt; height: 6pt; border-radius: 2px; margin-right: 3pt; background: var(--c); vertical-align: middle; }
-.method p { margin: 0 0 6pt; color: #333; }
+.method p { margin: 0 0 6pt; color: #3A3A38; }
 .method table { width: 100%; border-collapse: collapse; font-size: 8pt; margin: 4pt 0 8pt; }
-.method td, .method th { border-bottom: 1px solid #eeede8; padding: 3pt 4pt; text-align: left; }
+.method td, .method th { border-bottom: 1px solid #E2DFD6; padding: 3pt 4pt; text-align: left; }
 .method .num { text-align: right; font-variant-numeric: tabular-nums; }
 .apendice td { vertical-align: top; font-size: 7.4pt; line-height: 1.3; padding: 2.5pt 4pt; }
-.apendice tr.sub td { background: #f6f5f1; padding-top: 4pt; }
-.apendice ul { margin: 0 0 6pt; padding-left: 13pt; color: #333; } .apendice li { margin-bottom: 3pt; }
-a { color: #2a78d6; text-decoration: none; }
+.apendice tr.sub td { background: #ECEAE3; padding-top: 4pt; }
+.apendice ul { margin: 0 0 6pt; padding-left: 13pt; color: #3A3A38; } .apendice li { margin-bottom: 3pt; }
+a { color: #1F6B4E; text-decoration: none; }
 """
 
 
@@ -721,8 +740,9 @@ def construir_html(semana: Semana, p: pd.DataFrame, payload: dict, perfil: dict 
 
     return f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><style>{CSS}</style></head><body>
 <header class="top">
-  <div><h1>Monitor de Dolarización{perfil["titulo"]}</h1>
-  <p class="sub">Reporte semanal · semana del {semana.etiqueta}</p></div>
+  <div class="marca"><img src="data:image/png;base64,{LOGO_FUNDAR}" alt="Fundar">
+  <div class="titulos"><div class="eyebrow">Reporte semanal</div><h1>Monitor de Dolarización{perfil["titulo"]}</h1>
+  <p class="sub">Semana del {semana.etiqueta}</p></div></div>
   <div class="meta">Datos al {fecha_larga(f_cierre)}<br><a href="{DASHBOARD_URL}{perfil["query"]}">Tablero diario</a></div>
 </header>
 
@@ -750,7 +770,7 @@ def construir_html(semana: Semana, p: pd.DataFrame, payload: dict, perfil: dict 
 
 <section class="section card partible">
   <h2>Qué explica el índice</h2>
-  <p class="note">El dato de cada variable el viernes anterior y este, su variación y su aporte a la variación del índice frente a la semana anterior (rojo, a la suba; azul, a la baja), en puntos: suman el cambio del índice. El aporte del tipo de cambio se mide contra la inflación. Todos los datos son promedios de los últimos {config.INDICE_SUAVIZADO} días hábiles, igual que el índice (en reservas y depósitos, de su variación semanal). {perfil["nota_variables"]}</p>
+  <p class="note">El dato de cada variable el viernes anterior y este, su variación y su aporte a la variación del índice frente a la semana anterior (rojo, a la suba; verde, a la baja), en puntos: suman el cambio del índice. El aporte del tipo de cambio se mide contra la inflación. Todos los datos son promedios de los últimos {config.INDICE_SUAVIZADO} días hábiles, igual que el índice (en reservas y depósitos, de su variación semanal). {perfil["nota_variables"]}</p>
   {tabla_html}
 </section>
 
@@ -895,7 +915,7 @@ PERFILES = {"ar": lambda: PERFIL_AR}
 def html_a_pdf(html_txt: str, destino: Path, titulo: str = "Monitor de Dolarización") -> None:
     from playwright.sync_api import sync_playwright
 
-    footer = ("<div style='font-family:Inter,DejaVu Sans,sans-serif;font-size:7px;color:#898781;width:100%;"
+    footer = ("<div style='font-family:Helvetica Neue,Helvetica,Arial,Liberation Sans,Inter,DejaVu Sans,sans-serif;font-size:7px;color:#8C8B86;width:100%;"
               "padding:0 14mm;display:flex;justify-content:space-between'><span>" + titulo + " · "
               "Reporte semanal</span><span><span class='pageNumber'></span> / "
               "<span class='totalPages'></span></span></div>")
