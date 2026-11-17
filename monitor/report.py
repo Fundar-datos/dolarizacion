@@ -166,7 +166,7 @@ def _linea_tramos(ax, s: pd.Series, lw=1.8):
 
 def chart_indice_anual(indice: pd.Series, semana: Semana) -> str:
     s = indice[semana.viernes - pd.DateOffset(months=18): semana.viernes]
-    fig, ax = plt.subplots(figsize=(7.2, 2.0))
+    fig, ax = plt.subplots(figsize=(7.2, 3.7))
     _bandas(ax)
     ax.axvspan(semana.lunes, semana.viernes + pd.Timedelta(days=1), color=INK, alpha=0.08, lw=0, zorder=2)
     _linea_tramos(ax, s)
@@ -178,7 +178,7 @@ def chart_indice_anual(indice: pd.Series, semana: Semana) -> str:
 def chart_subindices(indice: pd.Series, subs: list[tuple[str, pd.Series, str]], semana: Semana) -> str:
     """Índice y subíndices (cada uno en su escala 0-100), últimos 18 meses."""
     desde = semana.viernes - pd.DateOffset(months=18)
-    fig, ax = plt.subplots(figsize=(7.2, 2.4))
+    fig, ax = plt.subplots(figsize=(7.2, 3.9))
     _bandas(ax)
     for nombre, s, color in subs:
         s = s[(s.index >= desde) & (s.index <= semana.viernes)].dropna()
@@ -316,7 +316,7 @@ def chart_mini(series: list[tuple], titulo: str, unidad: str, semana: Semana) ->
     """Gráfico chico de los últimos seis meses. Una serie con un cuarto
     elemento "der" va en un eje propio a la derecha (p. ej. reservas netas,
     de otra magnitud que las brutas)."""
-    fig, ax = plt.subplots(figsize=(1.85, 1.2))
+    fig, ax = plt.subplots(figsize=(3.5, 1.02))
     desde = semana.viernes - pd.DateOffset(months=6)
     der = None
     for nombre, s, color, *eje in series:
@@ -363,7 +363,7 @@ def chart_compras_ph(compras: list[dict]) -> str:
     if df.empty or "netas_usd_millones" not in df:
         return ""
     df = df.tail(36)
-    fig, ax = plt.subplots(figsize=(7.2, 1.3))
+    fig, ax = plt.subplots(figsize=(7.2, 1.45))
     ax.bar(range(len(df)), df["netas_usd_millones"], color=S1, width=0.7, zorder=3, label="Compras netas")
     if "netas_prom_12m" in df:
         ax.plot(range(len(df)), df["netas_prom_12m"], color=S2, lw=1.8, zorder=4, label="Promedio móvil 12 meses")
@@ -604,8 +604,28 @@ table.aportes td:first-child, table.aportes th:first-child { width: 25%; }
 table.aportes td.bar div { position: relative; height: 8pt; }
 table.aportes td.bar div::after { content: ""; position: absolute; left: 50%; top: -2pt; bottom: -2pt; border-left: 1px solid #B8B5AC; }
 table.aportes td.bar i { position: absolute; top: 0; bottom: 0; border-radius: 1.5pt; }
-.grid3 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5pt; }
-.grid3 .card { padding: 4pt 6pt; }
+.grid3 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 7pt; }
+.grid3 .card { padding: 5pt 7pt; }
+/* Diseño por páginas (A4, 267 mm de alto útil): cada .pagina es una hoja y
+   su contenido la ocupa entera. */
+.pagina { break-after: page; display: flex; flex-direction: column; min-height: 262mm; }
+.pagina.ultima { break-after: auto; }
+.pagina > .estira { flex: 1; display: flex; flex-direction: column; }
+.pagina > .estira > .card, .pagina .hero > .card { flex: 1; }
+.rotulo { font-size: 7pt; letter-spacing: 0.12em; text-transform: uppercase; color: #8C8B86; margin: 0 0 5pt; }
+.rotulo b { color: #1F6B4E; margin-right: 5pt; }
+.p1 .hero { flex: 1; align-items: stretch; margin-bottom: 0; }
+.p1 .racconto p { font-size: 10pt; line-height: 1.55; }
+.p1 ul.res li { font-size: 9.5pt; }
+.p2 table.aportes { font-size: 8.4pt; }
+.p2 table.aportes td, .p2 table.aportes th { padding-top: 3.1pt; padding-bottom: 3.1pt; }
+.p2 table.aportes td:first-child, .p2 table.aportes th:first-child { width: 31%; }
+.p2 .card { display: flex; flex-direction: column; }
+.p3 .card { display: flex; flex-direction: column; justify-content: center; }
+.p3 .card + .card { margin-top: 8pt; }
+.p4 .grid3 .card { padding: 3pt 6pt; }
+.apendice p, .apendice li { font-size: 8.4pt; line-height: 1.35; }
+.apendice td { font-size: 6.9pt !important; padding: 1.8pt 3pt !important; line-height: 1.25 !important; }
 .section { margin-top: 8pt; break-inside: avoid; }
 .page { break-before: page; }
 .legend { display: flex; flex-wrap: wrap; gap: 4pt 10pt; font-size: 7pt; color: #606060; margin-top: 4pt; }
@@ -739,6 +759,7 @@ def construir_html(semana: Semana, p: pd.DataFrame, payload: dict, perfil: dict 
     generado = pd.Timestamp.now(tz="America/Argentina/Buenos_Aires")
 
     return f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><style>{CSS}</style></head><body>
+<div class="pagina p1">
 <header class="top">
   <div class="marca"><img src="data:image/png;base64,{LOGO_FUNDAR}" alt="Fundar">
   <div class="titulos"><div class="eyebrow">Reporte semanal</div><h1>Monitor de Dolarización{perfil["titulo"]}</h1>
@@ -767,37 +788,47 @@ def construir_html(semana: Semana, p: pd.DataFrame, payload: dict, perfil: dict 
     <ul class="res">{"".join(f"<li>{x}</li>" for x in puntos)}</ul>
   </div>
 </section>
+</div>
 
-<section class="section card partible">
+<div class="pagina p2">
+<p class="rotulo"><b>02</b>Componentes</p>
+<section class="estira"><div class="card">
   <h2>Qué explica el índice</h2>
   <p class="note">El dato de cada variable el viernes anterior y este, su variación y su aporte a la variación del índice frente a la semana anterior (rojo, a la suba; verde, a la baja), en puntos: suman el cambio del índice. El aporte del tipo de cambio se mide contra la inflación. Todos los datos son promedios de los últimos {config.INDICE_SUAVIZADO} días hábiles, igual que el índice (en reservas y depósitos, de su variación semanal). {perfil["nota_variables"]}</p>
   {tabla_html}
-</section>
+</div></section>
+</div>
 
-<section class="section card">
-  <h2>Índice en los últimos 18 meses</h2>
-  <p class="note"><a href="{DASHBOARD_URL}{perfil["query"]}">Versión interactiva</a></p>
-  <div class="chart">{chart_indice_anual(indice, semana)}</div>
-  <div class="legend">{leyenda}</div>
-</section>
-
-{f'''<section class="section card">
-    <h2>Subíndices</h2>
-    <div class="chart">{sub_svg}</div>
-</section>''' if sub_svg else ""}
-
-<section class="page">
-  <div>
-    <h2>Últimos seis meses</h2>
-    <div class="grid3">{"".join(f"<div class='card chart'>{m}</div>" for m in minis)}</div>
+<div class="pagina p3">
+<p class="rotulo"><b>03</b>Evolución</p>
+<section class="estira">
+  <div class="card">
+    <h2>Índice en los últimos 18 meses</h2>
+    <p class="note"><a href="{DASHBOARD_URL}{perfil["query"]}">Versión interactiva</a></p>
+    <div class="chart">{chart_indice_anual(indice, semana)}</div>
+    <div class="legend">{leyenda}</div>
   </div>
-  {"" if not ph_svg else f'''<div class="section card">
-    <h2>Compras netas de USD de personas humanas (FAE)</h2>
-    <p class="note">Millones de USD por mes y promedio de 12 meses. BCRA.</p>    <div class="chart">{ph_svg}</div>
-  </div>'''}
+  {f'''<div class="card">
+    <h2>Subíndices</h2>
+    <p class="note">Cada subíndice en su propia escala de 0 a 100, con el mismo método que el índice.</p>
+    <div class="chart">{sub_svg}</div>
+  </div>''' if sub_svg else ""}
 </section>
+</div>
 
-<section class="page method">
+<div class="pagina p4">
+<p class="rotulo"><b>04</b>Variables</p>
+<h2>Últimos seis meses</h2>
+<div class="grid3">{"".join(f"<div class='card chart'>{m}</div>" for m in minis)}</div>
+{"" if not ph_svg else f'''<div class="section card">
+  <h2>Compras netas de USD de personas humanas (FAE)</h2>
+  <p class="note">Millones de USD por mes y promedio de 12 meses. BCRA.</p>
+  <div class="chart">{ph_svg}</div>
+</div>'''}
+</div>
+
+<section class="method">
+  <p class="rotulo"><b>05</b>Metodología</p>
   <h2>Metodología</h2>
   {perfil["metodo"](pca_txt, pesos_b) if perfil["codigo"] == "ar" else perfil["metodo"](pca_txt)}
   <table><thead><tr><th>Subíndice</th><th>Componente</th><th class="num">Peso en el subíndice</th><th class="num">Peso en el índice</th></tr></thead><tbody>{comp_rows}</tbody></table>
@@ -885,6 +916,7 @@ def apendice(perfil: dict, meta: dict) -> str:
     if not filas:
         return ""
     return f"""<section class="page method apendice">
+  <p class="rotulo"><b>06</b>Apéndice</p>
   <h2>Qué mueve el índice</h2>
   <p>El índice mide cuánta presión hay sobre el peso: arriba de 50, presión hacia la depreciación; abajo, alivio. El reporte muestra primero cuántos puntos empuja cada variable el índice por encima o por debajo de 50 (suman la distancia del índice a 50) y después cuánto lo movió frente a la semana anterior. Lo que mueve el índice depende de cómo entra cada variable:</p>
   <ul>
