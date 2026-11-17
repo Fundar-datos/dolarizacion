@@ -681,6 +681,7 @@ ul.mov li b { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .legend { display: flex; flex-wrap: wrap; gap: 4pt 10pt; font-size: 7pt; color: #606060; margin-top: 4pt; }
 .legend span::before { content: ""; display: inline-block; width: 8pt; height: 6pt; border-radius: 2px; margin-right: 3pt; background: var(--c); vertical-align: middle; }
 .method p { margin: 0 0 6pt; color: #3A3A38; }
+.method p.pie { color: #8C8B86; margin: 10pt 0 0; }
 .method table { width: 100%; border-collapse: collapse; font-size: 8pt; margin: 4pt 0 8pt; }
 .method td, .method th { border-bottom: 1px solid #E2DFD6; padding: 3pt 4pt; text-align: left; }
 .method .num { text-align: right; font-variant-numeric: tabular-nums; }
@@ -937,8 +938,7 @@ def construir_html(semana: Semana, p: pd.DataFrame, payload: dict, perfil: dict 
   {perfil["metodo"](pca_txt, pesos_b) if perfil["codigo"] == "ar" else perfil["metodo"](pca_txt)}
   <table><thead><tr><th>Subíndice</th><th>Componente</th><th class="num">Peso en el subíndice</th><th class="num">Peso en el índice</th></tr></thead><tbody>{comp_rows}</tbody></table>
   <p>El promedio ponderado de cada día se promedia con los {config.INDICE_SUAVIZADO - 1} días hábiles anteriores ({config.INDICE_SUAVIZADO} días) y se lleva a una escala de 0 a 100 con la normal acumulada. 50 es neutral; debajo hay presión apreciatoria (alivio) y arriba, presión depreciatoria. Un valor de 90 indica una presión tan alta como la del 10% de los días más tensos desde 2003. Los aportes en puntos reparten la distancia del índice a 50 entre los componentes, así que suman exactamente esa distancia. Si falta un componente, su peso se reparte entre los demás de su subíndice. Cada subíndice también se lleva a su propia escala de 0 a 100 con el mismo método, para leerlo solo; en puntos del índice, los tres subíndices suman la distancia del índice a 50.{perfil["metodo_extra"]}</p>
-  <p><b>Fuentes:</b> {perfil["fuentes"]}</p>
-  <p class="muted">Generado el {generado.day}/{generado.month}/{generado.year} a las {generado:%H:%M} (hora argentina). Tablero diario y datos: <a href="{DASHBOARD_URL}">{DASHBOARD_URL}</a></p>
+  <p class="pie">Fuentes: {perfil["fuentes"]}<br>Generado el {generado.day}/{generado.month}/{generado.year} a las {generado:%H:%M} (hora argentina). Tablero diario y datos: <a href="{DASHBOARD_URL}">{DASHBOARD_URL}</a></p>
 </section>
 {apendice(perfil, meta)}
 </body></html>"""
@@ -1041,7 +1041,7 @@ PERFIL_AR = {
     "minis": _minis_ar, "fae": True, "metodo": _metodo_ar, "apendice": APENDICE_AR,
     "metodo_extra": " Las compras de dólares de personas humanas son mensuales, entran al índice un mes después del cierre de cada mes (cuando el BCRA las publica) y se miden contra su promedio de 12 meses, para no confundir la salida del cepo con presión.",
     "nota_variables": "Las reservas y los depósitos se publican con dos o tres días de rezago.",
-    "fuentes": """BCRA (reservas, tipo de cambio A3500, BADLAR, depósitos en dólares, anexo del balance cambiario y planilla de reservas y liquidez en moneda extranjera), ArgentinaDatos (dólar MEP, CCL y blue; riesgo país) y A3 Mercados (futuros de dólar). Todas las series se descargan automáticamente.""",
+    "fuentes": """BCRA (reservas, tipo de cambio A3500, BADLAR, depósitos en dólares, anexo del balance cambiario y planilla de reservas y liquidez en moneda extranjera), ArgentinaDatos (dólar MEP, CCL y blue; riesgo país), A3 Mercados (futuros de dólar) y Secretaría de Finanzas (resultados de las licitaciones del Tesoro). Todas las series se descargan automáticamente.""",
     "panel": config.DATA_DIR / "panel_diario.csv", "json": config.OUTPUT_JSON, "salida": REPORTS_DIR,
 }
 
