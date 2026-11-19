@@ -206,6 +206,14 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .abiertos { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
 .abiertos ul { list-style: none; padding: 0; margin: 10px 0 0; display: flex; flex-direction: column; gap: 6px; }
 .abiertos .btn { display: inline-block; white-space: normal; text-align: left; max-width: 100%; }
+.docs { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.doc { display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: var(--ink); transition: border-color .12s; }
+.doc:hover { border-color: var(--verde); }
+.doc .tema { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--verde); font-weight: 600; }
+.doc h3 { font-size: 15.5px; line-height: 1.3; margin: 0; }
+.doc p { margin: 0; color: var(--ink-2); font-size: 13.5px; flex: 1; }
+.doc .meta { font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; gap: 8px; }
+.doc .meta b { color: var(--ink); font-weight: 600; }
 .cita { font-size: 13px; color: var(--ink-2); background: var(--wash); border-radius: 8px; padding: 10px 12px; margin-top: 10px; }
 
 @media (max-width: 900px) {
@@ -356,6 +364,48 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
         <p class="cita" id="cita"></p>
       </div>
     </div>
+  </section>
+
+
+  <h2 class="section-title" id="documentos"><b>07</b>Otros documentos de Fundar</h2>
+  <p class="note" style="margin:-4px 0 12px">Sobre bimonetarismo, regulaciones prudenciales, mercado de cambios y política monetaria.</p>
+  <section class="docs">
+    <a class="card doc" href="https://fund.ar/publicacion/argentina-bimonetaria/" target="_blank" rel="noopener">
+      <span class="tema">Bimonetarismo</span>
+      <h3>Argentina bimonetaria: cómo salvar al peso sin morir en el intento</h3>
+      <p>Diagnóstico del uso del dólar como reserva de valor y propuestas para recuperar el peso, como alternativa a la dolarización.</p>
+      <span class="meta"><span>Fundar · 2023</span><b>Leer ↗</b></span>
+    </a>
+    <a class="card doc" href="https://fund.ar/publicacion/hacia-una-convivencia-entre-el-peso-y-el-dolar/" target="_blank" rel="noopener">
+      <span class="tema">Regulaciones prudenciales</span>
+      <h3>Hacia una convivencia entre el peso y el dólar</h3>
+      <p>Más allá de la competencia de monedas: flotación administrada y regulaciones prudenciales, como encajes más altos para los depósitos en dólares, para convivir con el dólar sin renunciar al peso.</p>
+      <span class="meta"><span>Fundar · 2025</span><b>Leer ↗</b></span>
+    </a>
+    <a class="card doc" href="https://fund.ar/publicacion/el-mercado-de-cambios-bajo-la-lupa/" target="_blank" rel="noopener">
+      <span class="tema">Mercado de cambios</span>
+      <h3>El mercado de cambios bajo la lupa: la transición hacia la unificación</h3>
+      <p>Las alternativas para pasar de muchos tipos de cambio a uno solo y el papel de la transparencia en las intervenciones del BCRA.</p>
+      <span class="meta"><span>Fundar · 2023</span><b>Leer ↗</b></span>
+    </a>
+    <a class="card doc" href="https://fund.ar/wp-content/uploads/2023/10/Fundar_asignacion-de-liquidez-y-politica-monetaria-CC-BY-NC-ND-4.0-3.pdf" target="_blank" rel="noopener">
+      <span class="tema">Política monetaria</span>
+      <h3>Asignación de liquidez y política monetaria</h3>
+      <p>Cómo se reparte la liquidez en pesos y por qué las regulaciones macroprudenciales tienen que ser consistentes con el manejo de los flujos de capitales.</p>
+      <span class="meta"><span>Fundar · 2023</span><b>Leer ↗</b></span>
+    </a>
+    <a class="card doc" href="https://fund.ar/wp-content/uploads/2024/11/Fundar_La-sostenibilidad-de-la-deuda-publica_CC-BY-NC-ND-4.0.pdf" target="_blank" rel="noopener">
+      <span class="tema">Deuda y reservas</span>
+      <h3>La sostenibilidad de la deuda pública</h3>
+      <p>Por qué importa la capacidad de acumular reservas para pagar la deuda en dólares.</p>
+      <span class="meta"><span>Fundar · 2024</span><b>Leer ↗</b></span>
+    </a>
+    <a class="card doc" href="https://fund.ar/publicacion/un-analisis-de-los-determinantes-de-la-inflacion-en-argentina/" target="_blank" rel="noopener">
+      <span class="tema">Inflación</span>
+      <h3>Un análisis de los determinantes de la inflación en Argentina</h3>
+      <p>Qué explica la inflación argentina y por qué reducir el bimonetarismo es parte de la solución.</p>
+      <span class="meta"><span>Fundar · 2022</span><b>Leer ↗</b></span>
+    </a>
   </section>
 
   </div>
