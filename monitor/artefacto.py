@@ -70,8 +70,8 @@ def armar(variante: str, salida: Path) -> Path:
         raise SystemExit("No encontré el botón del reporte en index.html.")
     t = t.replace(ENLACE_PDF, ENLACE_ART)
     if v["titulo"]:
-        t = t.replace("<title>Monitor de Dolarización</title>", f"<title>Monitor de Dolarización ({v['titulo'].split()[-2]} días)</title>", 1)
-        t = t.replace("<h1>Monitor de Dolarización</h1>", f"<h1>Monitor de Dolarización · {v['titulo']}</h1>", 1)
+        t = t.replace("<title>Dolarómetro</title>", f"<title>Dolarómetro ({v['titulo'].split()[-2]} días)</title>", 1)
+        t = t.replace("<h1>Dolarómetro</h1>", f"<h1>Dolarómetro · {v['titulo']}</h1>", 1)
     t = t.replace("</body>\n</html>", _descarga("reportes/ultimo.pdf", nombre_pdf) + "\n</body></html>")
 
     (salida / "data").mkdir(parents=True, exist_ok=True)

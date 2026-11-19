@@ -1,4 +1,4 @@
-# Monitor de Dolarización (Argentina)
+# Dolarómetro (Argentina)
 
 Tablero diario para seguir la presión cambiaria y la dolarización de
 portafolios en Argentina, pensado para hacer incidencia en el ciclo electoral

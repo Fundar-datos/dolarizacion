@@ -1,4 +1,4 @@
-"""Reporte semanal en PDF del Monitor de Dolarización.
+"""Reporte semanal en PDF del Dolarómetro.
 
 Se genera los lunes con los datos de la semana hábil anterior (lunes a
 viernes) a partir de lo que ya calculó `monitor.build`:
@@ -862,7 +862,7 @@ def construir_html(semana: Semana, p: pd.DataFrame, payload: dict, perfil: dict 
 <div class="pagina p1">
 <header class="top">
   <div class="marca"><img src="data:image/png;base64,{LOGO_FUNDAR}" alt="Fundar">
-  <div class="titulos"><div class="eyebrow">Reporte semanal</div><h1>Monitor de Dolarización{perfil["titulo"]}</h1>
+  <div class="titulos"><div class="eyebrow">Reporte semanal</div><h1>Dolarómetro{perfil["titulo"]}</h1>
   <p class="sub">Semana del {semana.etiqueta}</p></div></div>
   <div class="meta">Datos al {fecha_larga(f_cierre)}<br><a href="{DASHBOARD_URL}{perfil["query"]}">Tablero diario</a></div>
 </header>
@@ -892,7 +892,7 @@ def construir_html(semana: Semana, p: pd.DataFrame, payload: dict, perfil: dict 
 </div>
 
 <div class="pagina p2">
-<div class="rh"><span>Monitor de Dolarización · Reporte semanal</span><span>Semana del {semana.etiqueta}</span></div>
+<div class="rh"><span>Dolarómetro · Reporte semanal</span><span>Semana del {semana.etiqueta}</span></div>
 <p class="rotulo"><b>02</b>Componentes</p>
 <h2 class="titulo-sec">Qué movió el índice esta semana</h2>
 <p class="bajada">{"".join(x + " " for x in puntos[1:2])}Cada fila muestra el dato de la variable el viernes anterior y este, y cuántos puntos movió el índice. Los aportes suman el cambio del índice.</p>
@@ -901,7 +901,7 @@ def construir_html(semana: Semana, p: pd.DataFrame, payload: dict, perfil: dict 
 </div>
 
 <div class="pagina p3">
-<div class="rh"><span>Monitor de Dolarización · Reporte semanal</span><span>Semana del {semana.etiqueta}</span></div>
+<div class="rh"><span>Dolarómetro · Reporte semanal</span><span>Semana del {semana.etiqueta}</span></div>
 <p class="rotulo"><b>03</b>Evolución</p>
 <figure class="fig">
   <figcaption class="fig-t">{html.escape(titulo_ind)}</figcaption>
@@ -918,7 +918,7 @@ def construir_html(semana: Semana, p: pd.DataFrame, payload: dict, perfil: dict 
 </div>
 
 <div class="pagina p4">
-<div class="rh"><span>Monitor de Dolarización · Reporte semanal</span><span>Semana del {semana.etiqueta}</span></div>
+<div class="rh"><span>Dolarómetro · Reporte semanal</span><span>Semana del {semana.etiqueta}</span></div>
 <p class="rotulo"><b>04</b>Variables</p>
 <h2 class="titulo-sec">Las variables, en los últimos seis meses</h2>
 <p class="bajada">Datos diarios sin promediar. La franja sombreada marca la semana del reporte.</p>
@@ -932,7 +932,7 @@ def construir_html(semana: Semana, p: pd.DataFrame, payload: dict, perfil: dict 
 </div>
 
 <section class="method pagina-texto">
-  <div class="rh"><span>Monitor de Dolarización · Reporte semanal</span><span>Semana del {semana.etiqueta}</span></div>
+  <div class="rh"><span>Dolarómetro · Reporte semanal</span><span>Semana del {semana.etiqueta}</span></div>
   <p class="rotulo"><b>05</b>Metodología</p>
   <h2>Metodología</h2>
   {perfil["metodo"](pca_txt, pesos_b) if perfil["codigo"] == "ar" else perfil["metodo"](pca_txt)}
@@ -1020,7 +1020,7 @@ def apendice(perfil: dict, meta: dict) -> str:
     if not filas:
         return ""
     return f"""<section class="page method apendice">
-  <div class="rh"><span>Monitor de Dolarización · Reporte semanal</span><span>Qué mueve el índice</span></div>
+  <div class="rh"><span>Dolarómetro · Reporte semanal</span><span>Qué mueve el índice</span></div>
   <p class="rotulo"><b>06</b>Apéndice</p>
   <h2>Qué mueve el índice</h2>
   <p>El índice mide cuánta presión hay sobre el peso: arriba de 50, presión hacia la depreciación; abajo, alivio. El reporte muestra primero cuántos puntos empuja cada variable el índice por encima o por debajo de 50 (suman la distancia del índice a 50) y después cuánto lo movió frente a la semana anterior. Lo que mueve el índice depende de cómo entra cada variable:</p>
@@ -1049,7 +1049,7 @@ PERFIL_AR = {
 PERFILES = {"ar": lambda: PERFIL_AR}
 
 
-def html_a_pdf(html_txt: str, destino: Path, titulo: str = "Monitor de Dolarización") -> None:
+def html_a_pdf(html_txt: str, destino: Path, titulo: str = "Dolarómetro") -> None:
     from playwright.sync_api import sync_playwright
 
     footer = ("<div style='font-family:Helvetica Neue,Helvetica,Arial,Liberation Sans,Inter,DejaVu Sans,sans-serif;font-size:7px;color:#8C8B86;width:100%;"
@@ -1086,7 +1086,7 @@ def generar(ref: date, pais: str = "ar") -> Path:
     salida.mkdir(parents=True, exist_ok=True)
     destino = salida / f"reporte-semanal-{semana.viernes:%Y-%m-%d}.pdf"
     (salida / "ultimo.html").write_text(html_txt, encoding="utf-8")
-    html_a_pdf(html_txt, destino, "Monitor de Dolarización" + perfil["titulo"])
+    html_a_pdf(html_txt, destino, "Dolarómetro" + perfil["titulo"])
     shutil.copyfile(destino, salida / "ultimo.pdf")
     log.info("Reporte de la semana del %s: %s", semana.etiqueta, destino)
     return destino

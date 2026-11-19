@@ -62,18 +62,18 @@ def armar_mensaje(pdf: Path, remitente: str, para: list[str], panel: Path | None
     racconto = report.racconto(viernes, textos)
 
     m = EmailMessage()
-    m["Subject"] = f"Monitor de Dolarización · Reporte semanal · semana del {semana}"
+    m["Subject"] = f"Dolarómetro · Reporte semanal · semana del {semana}"
     m["From"] = remitente
     m["To"] = remitente
     m["Bcc"] = ", ".join(para)
     texto_plano = "\n\n".join(x for x in [
-        f"Reporte semanal del Monitor de Dolarización, semana del {semana}.",
+        f"Reporte semanal del Dolarómetro, semana del {semana}.",
         indice_txt,
         html.unescape(re.sub(r"<[^>]+>", " ", racconto.replace("</p>", "\n\n"))).strip() if racconto else "",
         "Va adjunto el reporte en PDF.",
     ] if x)
     m.set_content(texto_plano)
-    cuerpo = (f"<p>Reporte semanal del Monitor de Dolarización, semana del {html.escape(semana)}.</p>"
+    cuerpo = (f"<p>Reporte semanal del Dolarómetro, semana del {html.escape(semana)}.</p>"
               + (f"<p><b>{html.escape(indice_txt)}</b></p>" if indice_txt else "")
               + (f"<h3 style='margin:16px 0 4px'>La semana</h3>{racconto}" if racconto else "")
               + "<p style='color:#52514e'>Va adjunto el reporte en PDF.</p>")
