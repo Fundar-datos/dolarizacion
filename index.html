@@ -634,7 +634,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     document.getElementById("claves-items").innerHTML = cl.items.map((it) =>
       `<div class="clave"><b>${esc(it.titular)}${ayuda(it.ayuda)}</b><p>${esc(it.bajada)}</p></div>`).join("");
     document.getElementById("claves-origen").textContent = cl.origen === "editorial"
-      ? "Lectura de Fundar." : "Claves escritas automáticamente con los datos del día.";
+      ? "Lectura de Fundar." : "";
     const lnk = document.getElementById("lnk-pdf");
     ["claves-reporte", "lnk-reporte2"].forEach((id) => {
       const a = document.getElementById(id);
