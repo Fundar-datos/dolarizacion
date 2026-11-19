@@ -325,17 +325,15 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
         <h2>Descargá los datos</h2>
         <p class="note">Libres para usar citando la fuente. Cada gráfico también se puede descargar como imagen o compartir con su enlace.</p>
         <ul>
-          <li><button class="btn" type="button" data-csv="diario">Índice, subíndices y variables diarias (CSV)</button></li>
-          <li><button class="btn" type="button" data-csv="fae">Compras de dólares de personas humanas, mensual (CSV)</button></li>
-          <li><button class="btn" type="button" data-csv="licit">Licitaciones dólar linked del Tesoro (CSV)</button></li>
-          <li><button class="btn" type="button" data-csv="json">Todos los datos del tablero (JSON)</button></li>
+          <li><button class="btn" type="button" data-csv="todo">Descargar todos los datos (CSV)</button></li>
         </ul>
+        <p class="note" style="margin-top:8px">Un archivo con una fila por día: el índice, los subíndices y las 20 variables. Las series mensuales (compras de dólares de personas humanas, reservas netas) van en el último día de cada mes y las licitaciones, en su fecha.</p>
       </div>
       <div>
         <h2>Recibí las claves de la semana</h2>
-        <p class="note">Cada sábado, las claves de la semana y lo que movió el índice, en tu correo.</p>
+        <p class="note">Cada sábado, en tu correo.</p>
         <ul>
-          <li><a class="btn" id="lnk-suscribir" href="#" hidden>Suscribirme</a></li>
+          <li><a class="btn" id="lnk-suscribir" href="#">Suscribirme</a></li>
         </ul>
         <p class="cita" id="cita"></p>
       </div>
@@ -437,7 +435,8 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     { title: "Riesgo país", keys: ["riesgo_pais"], unit: "pb" },
     { title: "Reservas internacionales", keys: ["reservas", "reservas_netas", "reservas_netas_sin_fmi"],
       names: ["Brutas", "Netas (eje der.)", "Netas sin FMI (eje der.)"], der: ["reservas_netas", "reservas_netas_sin_fmi"],
-      unit: "millones de USD" },
+      mensual: ["reservas_netas", "reservas_netas_sin_fmi"],
+      unit: "millones de USD. Las netas son mensuales: salen de la planilla de reservas del BCRA, que se publica con un mes de atraso" },
     { title: "Tasa en pesos (BADLAR, bancos privados)", keys: ["tasa"], unit: "% n.a." },
     { title: "Devaluación esperada en futuros (90 días)", keys: ["deval_implicita"], unit: "% TNA" },
     { title: "Cobertura en futuros de dólar (posición abierta)", keys: ["futuros_interes_abierto"], unit: "millones de USD" },
@@ -448,7 +447,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   // Dirección pública del tablero (para los enlaces que se comparten) y casilla
   // para suscribirse a las claves semanales (vacía: no se muestra el botón).
   const PUBLICO = "https://elibman36.github.io/dolarizacion/";
-  const SUSCRIPCION = "";
+  const SUSCRIPCION = "elibman@fund.ar";
   const FUENTES_TODAS = "BCRA, ArgentinaDatos, A3 Mercados y Secretaría de Finanzas";
   // Nombres más claros para leer el tablero (el nombre técnico queda en la ayuda).
   const NOMBRES = {
@@ -913,10 +912,17 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
       // Toda la historia, abierta en el período elegido; se navega con la
       // barra inferior o con la rueda del mouse, como el gráfico del índice.
       o.series = avail.map((k) => {
-        const name = m.names ? m.names[m.keys.indexOf(k)] : DATA.series[k].label;
+        let name = m.names ? m.names[m.keys.indexOf(k)] : DATA.series[k].label;
+        // Series mensuales con atraso: el nombre dice hasta qué mes llegan.
+        if (m.mensual && m.mensual.includes(k) && DATA.series[k].last_date) {
+          const mes = new Date(DATA.series[k].last_date + "T12:00:00").toLocaleDateString("es-AR", { month: "short", year: "2-digit" });
+          name = name.replace(" (eje der.)", ` (mensual, a ${mes}; eje der.)`);
+        }
         const col = cols[m.keys.indexOf(k)];
         if (m.bars) return { name, type: "bar", data: DATA.series[k].data, itemStyle: { color: col }, barMaxWidth: 10 };
-        return lineSeries(name, DATA.series[k].data, col, m.der && m.der.includes(k) ? { yAxisIndex: 1 } : {});
+        const mens = m.mensual && m.mensual.includes(k);
+        return lineSeries(name, DATA.series[k].data, col, Object.assign(m.der && m.der.includes(k) ? { yAxisIndex: 1 } : {},
+          mens ? { showSymbol: true, symbolSize: 4, sampling: undefined } : {}));
       });
       if (m.der && avail.some((k) => m.der.includes(k))) {
         // Eje propio a la derecha para las series de otra magnitud.
@@ -1247,33 +1253,35 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   // Datos abiertos: CSV con encabezados legibles.
   const celda = (v) => v == null ? "" : typeof v === "number" ? String(+v.toFixed(6)) : /[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
   const aCSV = (filas) => "\ufeff" + filas.map((f) => f.map(celda).join(",")).join("\n") + "\n";
-  function csvDiario() {
+  function csvTodo() {
     const cols = [["Índice de Dolarización (0-100)", DATA.ipd.indice || []]];
     Object.values(DATA.ipd.blocks).forEach((b) => cols.push([`Subíndice ${b.label} (0-100)`, b.indice || []]));
     Object.entries(DATA.series).forEach(([k, se]) => { if (k !== "ipd" && se.data) cols.push([`${nombre(k, se.label)} (${se.unit})`, se.data]); });
-    const fechas = new Set(); const mapas = cols.map(([, d]) => { const m = new Map(d); d.forEach(([f]) => fechas.add(f)); return m; });
+    // Mensuales: en el último día del mes. Licitaciones: en su fecha.
+    const finDeMes = (m) => { const t = new Date(m + "-01T12:00:00Z"); t.setUTCMonth(t.getUTCMonth() + 1); t.setUTCDate(0); return t.toISOString().slice(0, 10); };
+    const ph = (DATA.monthly && DATA.monthly.compras_personas_humanas) || [];
+    [["compras_usd_millones", "Compras de dólares de personas humanas, mes (millones de USD)"],
+     ["ventas_usd_millones", "Ventas de dólares de personas humanas, mes (millones de USD)"],
+     ["netas_usd_millones", "Compras netas de dólares de personas humanas, mes (millones de USD)"],
+     ["netas_prom_12m", "Compras netas de personas humanas, promedio 12 meses (millones de USD)"]]
+      .forEach(([k, n]) => { if (ph.some((r) => r[k] != null)) cols.push([n, ph.map((r) => [finDeMes(r.fecha), r[k]])]); });
+    const lic = (DATA.monthly && DATA.monthly.licitaciones_dl) || [];
+    [["ofertado_usd", "Licitación dólar linked: ofrecido (millones de USD VN)"],
+     ["adjudicado_usd", "Licitación dólar linked: adjudicado (millones de USD VN)"],
+     ["duales_usd", "Licitación: duales con dólar linked adjudicados (millones de USD VN)"],
+     ["instrumentos", "Licitación dólar linked: instrumentos"]]
+      .forEach(([k, n]) => { if (lic.some((r) => r[k] != null)) cols.push([n, lic.map((r) => [r.fecha, r[k]])]); });
+    const fechas = new Set(); const mapas = cols.map(([, d]) => { const m = new Map(); d.forEach(([f, v]) => { fechas.add(f); if (v != null) m.set(f, m.has(f) && typeof v === "number" ? m.get(f) + v : v); }); return m; });
     const filas = [["fecha", ...cols.map((c) => c[0])]];
     [...fechas].sort().forEach((f) => filas.push([f, ...mapas.map((m) => m.has(f) ? m.get(f) : null)]));
     return aCSV(filas);
   }
-  function csvLista(xs) {
-    if (!xs || !xs.length) return aCSV([["sin datos"]]);
-    const ks = [...new Set(xs.flatMap((x) => Object.keys(x)))];
-    return aCSV([ks, ...xs.map((x) => ks.map((k) => x[k]))]);
-  }
-  document.querySelectorAll("[data-csv]").forEach((b) => b.addEventListener("click", async () => {
+  document.querySelectorAll("[data-csv]").forEach((b) => b.addEventListener("click", () => {
     if (!DATA) return;
-    const t = b.dataset.csv, f = fechaArch();
-    if (t === "json") {
-      const r = await fetch(new URLSearchParams(location.search).get("data") || PAISES.ar.json);
-      return guardar(await r.blob(), `fundar-dolarizacion-${f}.json`);
-    }
-    const txt = t === "diario" ? csvDiario() : csvLista(t === "fae" ? DATA.monthly.compras_personas_humanas : DATA.monthly.licitaciones_dl);
-    const nom = { diario: "series-diarias", fae: "compras-personas-humanas", licit: "licitaciones-dolar-linked" }[t];
-    guardar(new Blob([txt], { type: "text/csv;charset=utf-8" }), `fundar-dolarizacion-${nom}-${f}.csv`);
+    guardar(new Blob([csvTodo()], { type: "text/csv;charset=utf-8" }), `fundar-dolarometro-datos-${fechaArch()}.csv`);
   }));
   function renderAbiertos() {
-    if (SUSCRIPCION) ["lnk-suscribir", "claves-suscribir"].forEach((id) => {
+    ["lnk-suscribir", "claves-suscribir"].forEach((id) => {
       const sus = document.getElementById(id);
       sus.hidden = false;
       sus.href = `mailto:${SUSCRIPCION}?subject=${encodeURIComponent("Suscripción a las claves semanales del Dolarómetro")}&body=${encodeURIComponent("Hola, quiero recibir las claves semanales del Dolarómetro.\n\nNombre:\nOrganización:")}`;
