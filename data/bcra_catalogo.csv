@@ -2003,3 +2003,999 @@ idVariable,descripcion,categoria,tipoSerie,periodicidad,unidadExpresion,moneda,p
 2031,Tasa de interÃ©s de otros adelantos otorgados a personas jurÃ­dicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,4.71
 2032,Tasa de interÃ©s de otros adelantos otorgados a personas jurÃ­dicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,4.71
 2033,"Tasa de interÃ©s de otros adelantos otorgados a personas jurÃ­dicas no PyMEs a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,4.71
+2034,"Tasa de interés de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2035,Tasa de interés de documentos a sola firma otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,3.91
+2036,Tasa de interés de documentos a sola firma otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,3.97
+2037,Tasa de interés de documentos descontados otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2038,Tasa de interés de documentos descontados otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2039,Tasa de interés de documentos comprados otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2040,Tasa de interés de documentos comprados otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2041,Tasa de interés de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,8.75
+2042,Tasa de interés de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,8.75
+2043,"Tasa de interés de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,8.75
+2044,"Tasa de interés de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,8.75
+2045,"Tasa de interés de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2046,"Tasa de interés de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2047,Tasa de interés de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija de más de 10 años ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2048,"Tasa de interés de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2049,Tasa de interés de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,7.42
+2050,Tasa de interés de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,7.42
+2051,"Tasa de interés de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija, de hasta 1 año ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2052,"Tasa de interés de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,0.0
+2053,Tasa de interés de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija de más de 1 año ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,7.42
+2054,"Tasa de interés de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,7.42
+2055,Tasa de interés de tarjetas de crédito de personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,19.56
+2056,Tasa de interés de tarjetas de crédito de personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,19.56
+2057,Tasa de interés de créditos documentarios otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,8.56
+2058,Tasa de interés de créditos documentarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,8.56
+2059,Tasa de interés de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,4.49
+2060,Tasa de interés de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,4.5
+2061,"Tasa de interés de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,3.12
+2062,"Tasa de interés de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,3.12
+2063,"Tasa de interés de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija, de 90 y más días",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,7.51
+2064,"Tasa de interés de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de 90 y más días",Tasas de interés de préstamos,Tasa de interés,M,En porcentaje nominal anual,ME,2010-07-31,2026-10-31,7.55
+2065,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,1993-06-30,2026-10-31,9752739718.0
+2066,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,9728776656.0
+2067,"Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,652245053.0
+2068,"Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,9076531602.0
+2069,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,23963062.0
+2070,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,7950005.0
+2071,Saldo de otros adelantos otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2002-01-31,2026-10-31,634887927.0
+2072,Saldo de otros adelantos otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,562691168.0
+2073,"Saldo de otros adelantos otorgados al sector privado a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,83809283.0
+2074,"Saldo de otros adelantos otorgados al sector privado a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,478881885.0
+2075,Saldo de otros adelantos otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,72196760.0
+2076,Saldo de otros adelantos otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,52.0
+2077,Monto de documentos a sola firma otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,1993-06-30,2026-10-31,1876190208.0
+2078,Monto de documentos a sola firma otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1861619797.0
+2079,Monto de documentos a sola firma otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,14570411.0
+2080,Monto de documentos a sola firma otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,277344833.0
+2081,Monto de documentos descontados otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4448440243.0
+2082,Monto de documentos descontados otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4434777065.0
+2083,Monto de documentos descontados otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,13663178.0
+2084,Monto de documentos descontados otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,870000.0
+2085,Monto de documentos comprados otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,761372767.0
+2086,Monto de documentos comprados otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,740753815.0
+2087,Monto de documentos comprados otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,20618952.0
+2088,Monto de documentos comprados otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2089,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,1993-06-30,2026-10-31,44181300.0
+2090,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,44181300.0
+2091,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2092,Monto de préstamos hipotecarios otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,475337696.0
+2093,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,1993-06-30,2026-10-31,39604656.0
+2094,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,39604656.0
+2095,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2096,"Monto de préstamos hipotecarios otorgados al sector privado a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,36194152.0
+2097,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,1993-06-30,2026-10-31,2325802.0
+2098,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2325802.0
+2099,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2100,"Monto de préstamos hipotecarios otorgados al sector privado a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,11259591.0
+2101,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija de más de 10 años ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,1993-06-30,2026-10-31,2250842.0
+2102,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2250842.0
+2103,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2104,"Monto de préstamos hipotecarios otorgados al sector privado a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,427996775.0
+2105,Monto de préstamos prendarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,1993-06-30,2026-10-31,323371032.0
+2106,Monto de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,193693109.0
+2107,Monto de préstamos prendarios otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,129677923.0
+2111,"Monto de préstamos prendarios otorgados al sector privado a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,43087912.0
+2112,"Monto de préstamos prendarios otorgados al sector privado a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,208179599.0
+2113,Monto de préstamos prendarios otorgados al sector privado a tasa fija de más de 1 año ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,1993-06-30,2026-10-31,261425608.0
+2114,"Monto de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,174835597.0
+2115,"Monto de préstamos prendarios otorgados al sector privado a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,86590011.0
+2116,"Monto de préstamos prendarios otorgados al sector privado a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,50040592.0
+2117,Monto de personales y tarjetas de crédito del sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,1993-06-30,2026-10-31,6152842404.0
+2118,Monto de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,6152118377.0
+2119,Monto de personales y tarjetas de crédito del sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,724027.0
+2120,Monto de personales y tarjetas de crédito del sector privado a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,144394801.0
+2121,"Monto de personales y tarjetas de crédito del sector privado a tasa fija, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,1993-06-30,2026-10-31,4800516353.0
+2122,"Monto de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4800394979.0
+2123,"Monto de personales y tarjetas de crédito del sector privado a tasa fija igual a cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,121374.0
+2124,"Monto de personales y tarjetas de crédito del sector privado a tasa variable, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,377962.0
+2125,"Monto de personales y tarjetas de crédito del sector privado a tasa fija, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,1993-06-30,2026-10-31,1352326051.0
+2126,"Monto de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1351723398.0
+2127,"Monto de personales y tarjetas de crédito del sector privado a tasa fija igual a cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,602653.0
+2128,"Monto de personales y tarjetas de crédito del sector privado a tasa variable, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,144016839.0
+2129,Monto de préstamos personales a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2002-01-31,2026-10-31,1532808657.0
+2130,Monto de préstamos personales a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1532084630.0
+2131,Monto de préstamos personales a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,724027.0
+2132,Monto de préstamos personales a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,144394801.0
+2133,"Monto de préstamos personales a tasa fija, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2002-01-31,2026-10-31,180482606.0
+2134,"Monto de préstamos personales a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,180361232.0
+2135,"Monto de préstamos personales a tasa fija igual a cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,121374.0
+2136,"Monto de préstamos personales a tasa variable, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,377962.0
+2137,"Monto de préstamos personales a tasa fija, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2002-01-31,2026-10-31,1352326051.0
+2138,"Monto de préstamos personales a tasa fija distinta de cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1351723398.0
+2139,"Monto de préstamos personales a tasa fija igual a cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,602653.0
+2140,"Monto de préstamos personales a tasa variable, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,144016839.0
+2141,Saldo de tarjetas de crédito del sector privado a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2002-01-31,2026-10-31,4620033747.0
+2142,Saldo de tarjetas de crédito del sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,4620033747.0
+2143,Saldo de tarjetas de crédito del sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2144,Saldo de tarjetas de crédito del sector privado a tasa variable,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2145,Monto de créditos documentarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2146,Monto de créditos documentarios otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2147,Monto de créditos documentarios otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2148,Monto de créditos documentarios otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2149,Monto de otros préstamos otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1522937931.0
+2150,Monto de otros préstamos otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1514907130.0
+2151,Monto de otros préstamos otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,8030801.0
+2152,Monto de otros préstamos otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,51993135.0
+2153,"Monto de otros préstamos otorgados al sector privado a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,590531452.0
+2154,"Monto de otros préstamos otorgados al sector privado a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,585892634.0
+2155,"Monto de otros préstamos otorgados al sector privado a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4638818.0
+2156,"Monto de otros préstamos otorgados al sector privado a tasa variable, hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,3579123.0
+2157,"Monto de otros préstamos otorgados al sector privado a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,932406479.0
+2158,"Monto de otros préstamos otorgados al sector privado a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,929014496.0
+2159,"Monto de otros préstamos otorgados al sector privado a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,3391983.0
+2160,"Monto de otros préstamos otorgados al sector privado a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,48414012.0
+2161,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,1993-06-30,2026-10-31,34.0
+2162,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,1993-06-30,,
+2163,"Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija a tasa fija distinta de cero, sin acuerdo",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,1993-06-30,,
+2164,"Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija a tasa fija distinta de cero, con acuerdo",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,1993-06-30,,
+2165,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,1993-06-30,,
+2166,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,1993-06-30,,
+2167,Saldo de otros adelantos otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2002-01-31,2026-10-31,197254.0
+2168,Saldo de otros adelantos otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,195484.0
+2169,"Saldo de otros adelantos otorgados al sector privado a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,187229.0
+2170,"Saldo de otros adelantos otorgados al sector privado a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,8255.0
+2171,Saldo de otros adelantos otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,1770.0
+2172,Saldo de otros adelantos otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2173,Monto de documentos a sola firma otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,2431956.0
+2174,Monto de documentos a sola firma otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,2338507.0
+2175,Monto de documentos a sola firma otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,93449.0
+2176,Monto de documentos a sola firma otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3129.0
+2177,Monto de documentos descontados otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,28.0
+2178,Monto de documentos descontados otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,28.0
+2179,Monto de documentos descontados otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2180,Monto de documentos descontados otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2181,Monto de documentos comprados otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2182,Monto de documentos comprados otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2183,Monto de documentos comprados otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2184,Monto de documentos comprados otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2185,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,16443.0
+2186,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,16443.0
+2187,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2188,Monto de préstamos hipotecarios otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3000.0
+2189,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,16443.0
+2190,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,16443.0
+2191,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2192,"Monto de préstamos hipotecarios otorgados al sector privado a tasa variable, hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2193,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,0.0
+2194,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2195,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2196,"Monto de préstamos hipotecarios otorgados al sector privado a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3000.0
+2197,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija de más de 10 años ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,0.0
+2198,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2199,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2200,"Monto de préstamos hipotecarios otorgados al sector privado a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2201,Monto de préstamos prendarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,29176.0
+2202,Monto de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,28914.0
+2203,Monto de préstamos prendarios otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,262.0
+2204,Monto de préstamos prendarios otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2205,"Monto de préstamos prendarios otorgados al sector privado a tasa fija, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,0.0
+2206,"Monto de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2207,"Monto de préstamos prendarios otorgados al sector privado a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2208,"Monto de préstamos prendarios otorgados al sector privado a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2209,Monto de préstamos prendarios otorgados al sector privado a tasa fija de más de 1 año ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,29176.0
+2210,"Monto de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,28914.0
+2211,"Monto de préstamos prendarios otorgados al sector privado a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,262.0
+2212,"Monto de préstamos prendarios otorgados al sector privado a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2213,Monto de personales y tarjetas de crédito del sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,3228.0
+2214,Monto de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3228.0
+2215,Monto de personales y tarjetas de crédito del sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2216,Monto de personales y tarjetas de crédito del sector privado a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2217,"Monto de personales y tarjetas de crédito del sector privado a tasa fija, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,3139.0
+2218,"Monto de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3139.0
+2219,"Monto de personales y tarjetas de crédito del sector privado a tasa fija igual a cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2220,"Monto de personales y tarjetas de crédito del sector privado a tasa variable, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2221,"Monto de personales y tarjetas de crédito del sector privado a tasa fija, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,1993-06-30,2026-10-31,89.0
+2222,"Monto de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,89.0
+2223,"Monto de personales y tarjetas de crédito del sector privado a tasa fija igual a cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2224,"Monto de personales y tarjetas de crédito del sector privado a tasa variable, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2225,Monto de préstamos personales a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2002-01-31,2026-10-31,89.0
+2226,Monto de préstamos personales a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,89.0
+2227,Monto de préstamos personales a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2228,Monto de préstamos personales a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2229,"Monto de préstamos personales a tasa fija, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2002-01-31,2026-10-31,0.0
+2230,"Monto de préstamos personales a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2231,"Monto de préstamos personales a tasa fija igual a cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2232,"Monto de préstamos personales a tasa variable, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2233,"Monto de préstamos personales a tasa fija, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2002-01-31,2026-10-31,89.0
+2234,"Monto de préstamos personales a tasa fija distinta de cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,89.0
+2235,"Monto de préstamos personales a tasa fija igual a cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2236,"Monto de préstamos personales a tasa variable, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2237,Saldos de tarjetas de crédito del sector privado a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2002-01-31,2026-10-31,3139.0
+2238,Saldos de tarjetas de crédito del sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,3139.0
+2239,Saldos de tarjetas de crédito del sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2240,Saldos de tarjetas de crédito del sector privado a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2241,Monto de créditos documentarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,13217.0
+2242,Monto de créditos documentarios otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,13184.0
+2243,Monto de créditos documentarios otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,33.0
+2244,Monto de créditos documentarios otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2245,Monto de otros préstamos otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,215409.0
+2246,Monto de otros préstamos otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,211930.0
+2247,Monto de otros préstamos otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3479.0
+2248,Monto de otros préstamos otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,399.0
+2249,"Monto de otros préstamos otorgados al sector privado a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,105621.0
+2250,"Monto de otros préstamos otorgados al sector privado a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,105621.0
+2251,"Monto de otros préstamos otorgados al sector privado a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2252,"Monto de otros préstamos otorgados al sector privado a tasa variable, hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2253,"Monto de otros préstamos otorgados al sector privado a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,109788.0
+2254,"Monto de otros préstamos otorgados al sector privado a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,106309.0
+2255,"Monto de otros préstamos otorgados al sector privado a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3479.0
+2256,"Monto de otros préstamos otorgados al sector privado a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,399.0
+2257,Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,900781340.0
+2258,"Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,277009486.0
+2259,"Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,623771854.0
+2260,Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,7683058.0
+2261,Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2262,Saldo de otros adelantos otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,113296563.0
+2263,"Saldo de otros adelantos otorgados a personas humanas a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,23171219.0
+2264,"Saldo de otros adelantos otorgados a personas humanas a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,90125344.0
+2265,Saldo de otros adelantos otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,64861252.0
+2266,Saldo de otros adelantos otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,46.0
+2267,Monto de documentos a sola firma otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2002-01-31,2026-10-31,246782231.0
+2268,Monto de documentos a sola firma otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,246459402.0
+2269,Monto de documentos a sola firma otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,322829.0
+2270,Monto de documentos a sola firma otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,12772548.0
+2271,Monto de documentos descontados otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,695317050.0
+2272,Monto de documentos descontados otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,686305748.0
+2273,Monto de documentos descontados otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,9011302.0
+2274,Monto de documentos descontados otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,216000.0
+2275,Monto de documentos comprados otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,37942966.0
+2276,Monto de documentos comprados otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,37373978.0
+2277,Monto de documentos comprados otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,568988.0
+2278,Monto de documentos comprados otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2279,Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2002-01-31,2026-10-31,13688408.0
+2280,Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,13688408.0
+2281,Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2282,Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,439036421.0
+2283,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,10193864.0
+2284,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2285,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4015627.0
+2286,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1243702.0
+2287,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2288,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,7136841.0
+2289,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2250842.0
+2290,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2291,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,427996775.0
+2292,Monto de préstamos prendarios otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2002-01-31,2026-10-31,239589322.0
+2293,Monto de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,122860163.0
+2294,Monto de préstamos prendarios otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,116729159.0
+2295,Monto de préstamos prendarios otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,46413853.0
+2296,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,11618861.0
+2297,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,34554008.0
+2298,"Monto de préstamos prendarios otorgados a personas humanas a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2268951.0
+2299,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,111241302.0
+2300,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,82175151.0
+2301,"Monto de préstamos prendarios otorgados a personas humanas a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,44144902.0
+2302,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2002-01-31,2026-10-31,5804234151.0
+2303,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,5803510124.0
+2304,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,724027.0
+2305,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,144394801.0
+2306,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4451786726.0
+2307,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,121374.0
+2308,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa variable, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,377962.0
+2309,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija distinta de cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1351723398.0
+2310,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,602653.0
+2311,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa variable, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,144016839.0
+2312,Saldo de tarjetas de crédito de personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,4271425494.0
+2313,Saldo de tarjetas de crédito de personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2314,Saldo de tarjetas de crédito de personas humanas a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2315,Monto de créditos documentarios otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2316,Monto de créditos documentarios otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2317,Monto de créditos documentarios otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2318,Monto de créditos documentarios otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2319,Monto de otros préstamos otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,149253138.0
+2320,Monto de otros préstamos otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,144319217.0
+2321,Monto de otros préstamos otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4933921.0
+2322,Monto de otros préstamos otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,6546772.0
+2323,"Monto de otros préstamos otorgados a personas humanas a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2834591.0
+2324,"Monto de otros préstamos otorgados a personas humanas a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1093653.0
+2325,"Monto de otros préstamos otorgados a personas humanas a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1740938.0
+2326,"Monto de otros préstamos otorgados a personas humanas a tasa variable, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1534689.0
+2327,"Monto de otros préstamos otorgados a personas humanas a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,146418547.0
+2328,"Monto de otros préstamos otorgados a personas humanas a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,143225564.0
+2329,"Monto de otros préstamos otorgados a personas humanas a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,3192983.0
+2330,"Monto de otros préstamos otorgados a personas humanas a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,5012083.0
+2331,Saldo de otros adelantos otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,7800.0
+2332,"Saldo de otros adelantos otorgados a personas humanas a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,5113.0
+2333,"Saldo de otros adelantos otorgados a personas humanas a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,2687.0
+2334,Saldo de otros adelantos otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,290.0
+2335,Saldo de otros adelantos otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2336,Monto de documentos a sola firma otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2002-01-31,2026-10-31,115935.0
+2337,Monto de documentos a sola firma otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,96000.0
+2338,Monto de documentos a sola firma otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,19935.0
+2339,Monto de documentos a sola firma otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,75.0
+2340,Monto de documentos descontados otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2341,Monto de documentos descontados otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2342,Monto de documentos descontados otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2343,Monto de documentos descontados otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2344,Monto de documentos comprados otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2345,Monto de documentos comprados otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2346,Monto de documentos comprados otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2347,Monto de documentos comprados otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2348,Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2002-01-31,2026-10-31,3310.0
+2349,Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3310.0
+2350,Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2351,Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2352,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3310.0
+2353,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2354,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2355,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2356,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2357,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2358,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2359,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2360,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2361,Monto de préstamos prendarios otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2002-01-31,2026-10-31,11869.0
+2362,Monto de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,11651.0
+2363,Monto de préstamos prendarios otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,218.0
+2364,Monto de préstamos prendarios otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2365,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2366,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2367,"Monto de préstamos prendarios otorgados a personas humanas a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2368,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,11651.0
+2369,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,218.0
+2370,"Monto de préstamos prendarios otorgados a personas humanas a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2371,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2002-01-31,2026-10-31,2660.0
+2372,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,2660.0
+2373,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2374,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2375,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,2571.0
+2376,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija igual a cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2377,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa variable, de hasta 180 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2378,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija distinta de cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,89.0
+2379,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija igual a cero, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2380,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa variable, de más de 180 días",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2381,Saldos de tarjetas de crédito de personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,2571.0
+2382,Saldos de tarjetas de crédito de personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2383,Saldos de tarjetas de crédito de personas humanas a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2384,Monto de créditos documentarios otorgados a personas humanas a tasa fija,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,158.0
+2385,Monto de créditos documentarios otorgados a personas humanas a tasa fija,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,158.0
+2386,Monto de créditos documentarios otorgados a personas humanas a tasa fija,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2387,Monto de créditos documentarios otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2388,Monto de otros préstamos otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,5166.0
+2389,Monto de otros préstamos otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,4885.0
+2390,Monto de otros préstamos otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,281.0
+2391,Monto de otros préstamos otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,399.0
+2392,"Monto de otros préstamos otorgados a personas humanas a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2393,"Monto de otros préstamos otorgados a personas humanas a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2394,"Monto de otros préstamos otorgados a personas humanas a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2395,"Monto de otros préstamos otorgados a personas humanas a tasa variable, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2396,"Monto de otros préstamos otorgados a personas humanas a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,5166.0
+2397,"Monto de otros préstamos otorgados a personas humanas a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,4885.0
+2398,"Monto de otros préstamos otorgados a personas humanas a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,281.0
+2399,"Monto de otros préstamos otorgados a personas humanas a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,399.0
+2400,Saldo de adelantos en cuenta corriente otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,8827995316.0
+2401,"Saldo de adelantos en cuenta corriente otorgados a personas jurídicas a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,375235567.0
+2402,"Saldo de adelantos en cuenta corriente otorgados a personas jurídicas a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,8452759749.0
+2403,Saldo de adelantos en cuenta corriente otorgados a personas jurídicas a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,16280004.0
+2404,Saldo de adelantos en cuenta corriente otorgados a personas jurídicas a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,7950005.0
+2405,Saldo de otros adelantos otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,449394605.0
+2406,"Saldo de otros adelantos otorgados a personas jurídicas a tasa fija, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,60638064.0
+2407,"Saldo de otros adelantos otorgados a personas jurídicas a tasa fija, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,388756541.0
+2408,Saldo de otros adelantos otorgados a personas jurídicas a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,7335508.0
+2409,Saldo de otros adelantos otorgados a personas jurídicas a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,6.0
+2410,Monto de documentos a sola firma otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2002-01-31,2026-10-31,1629407977.0
+2411,Monto de documentos a sola firma otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1615160395.0
+2412,Monto de documentos a sola firma otorgados a personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,14247582.0
+2413,Monto de documentos a sola firma otorgados a personas jurídicas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,264572285.0
+2414,Monto de documentos descontados otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,3753123193.0
+2415,Monto de documentos descontados otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,3748471317.0
+2416,Monto de documentos descontados otorgados a personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4651876.0
+2417,Monto de documentos descontados otorgados a personas jurídicas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,654000.0
+2418,Monto de documentos comprados otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,723429801.0
+2419,Monto de documentos comprados otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,703379837.0
+2420,Monto de documentos comprados otorgados a personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,20049964.0
+2421,Monto de documentos comprados otorgados a personas jurídicas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2422,Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2002-01-31,2026-10-31,30492892.0
+2423,Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,30492892.0
+2424,Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2425,Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,36301275.0
+2426,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,29410792.0
+2427,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2428,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,32178525.0
+2429,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1082100.0
+2430,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2431,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4122750.0
+2432,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2433,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2434,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2435,Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2002-01-31,2026-10-31,83781710.0
+2436,Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,70832946.0
+2437,Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,12948764.0
+2438,Monto de préstamos prendarios otorgados a personas jurídicas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,211806338.0
+2439,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,7238651.0
+2440,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,8533904.0
+2441,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,205910648.0
+2442,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,63594295.0
+2443,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4414860.0
+2444,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,5895690.0
+2445,Saldo de tarjetas de crédito de personas jurídicas a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,348608253.0
+2446,Saldo de tarjetas de crédito de personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,348608253.0
+2447,Saldo de tarjetas de crédito de personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2448,Saldo de tarjetas de crédito de personas jurídicas a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2449,Monto de créditos documentarios otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2450,Monto de créditos documentarios otorgados a personas jurídicas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2451,Monto de créditos documentarios otorgados a personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2452,Monto de créditos documentarios otorgados a personas jurídicas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2453,Monto de otros préstamos otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1373684793.0
+2454,Monto de otros préstamos otorgados a personas jurídicas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1370587913.0
+2455,Monto de otros préstamos otorgados a personas jurídicas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,3096880.0
+2456,Monto de otros préstamos otorgados a personas jurídicas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,45446363.0
+2457,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,587696861.0
+2458,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,584798981.0
+2459,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2897880.0
+2460,"Monto de otros préstamos otorgados a personas jurídicas a tasa variable, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2044434.0
+2461,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,785987932.0
+2462,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,785788932.0
+2463,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,199000.0
+2464,"Monto de otros préstamos otorgados a personas jurídicas a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,43401929.0
+2465,Saldo de otros adelantos otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,187684.0
+2466,"Saldo de otros adelantos otorgados a personas jurídicas a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,182116.0
+2467,"Saldo de otros adelantos otorgados a personas jurídicas a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,5568.0
+2468,Saldo de otros adelantos otorgados a personas jurídicas a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,1480.0
+2469,Saldo de otros adelantos otorgados a personas jurídicas a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2470,Monto de documentos a sola firma otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2002-01-31,2026-10-31,2316021.0
+2471,Monto de documentos a sola firma otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,2242507.0
+2472,Monto de documentos a sola firma otorgados a personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,73514.0
+2473,Monto de documentos a sola firma otorgados a personas jurídicas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3054.0
+2474,Monto de documentos descontados otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,28.0
+2475,Monto de documentos descontados otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,28.0
+2476,Monto de documentos descontados otorgados a personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2477,Monto de documentos descontados otorgados a personas jurídicas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2478,Monto de documentos comprados otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2479,Monto de documentos comprados otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2480,Monto de documentos comprados otorgados a personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2481,Monto de documentos comprados otorgados a personas jurídicas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2482,Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2002-01-31,2026-10-31,13133.0
+2483,Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,13133.0
+2484,Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2485,Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3000.0
+2486,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,13133.0
+2487,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2488,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2489,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2490,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2491,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3000.0
+2492,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2493,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2494,"Monto de préstamos hipotecarios otorgados a personas jurídicas a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2495,Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2002-01-31,2026-10-31,17307.0
+2496,Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,17263.0
+2497,Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,44.0
+2498,Monto de préstamos prendarios otorgados a personas jurídicas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2499,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2500,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2501,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2502,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,17263.0
+2503,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,44.0
+2504,"Monto de préstamos prendarios otorgados a personas jurídicas a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2505,Saldos de tarjetas de crédito de personas jurídicas a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,568.0
+2506,Saldos de tarjetas de crédito de personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,568.0
+2507,Saldos de tarjetas de crédito de personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2508,Saldos de tarjetas de crédito de personas jurídicas a tasa variable,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2509,Monto de créditos documentarios otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,13059.0
+2510,Monto de créditos documentarios otorgados a personas jurídicas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,13026.0
+2511,Monto de créditos documentarios otorgados a personas jurídicas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,33.0
+2512,Monto de créditos documentarios otorgados a personas jurídicas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2513,Monto de otros préstamos otorgados a personas jurídicas a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,210243.0
+2514,Monto de otros préstamos otorgados a personas jurídicas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,207045.0
+2515,Monto de otros préstamos otorgados a personas jurídicas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3198.0
+2516,Monto de otros préstamos otorgados a personas jurídicas a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2517,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,105621.0
+2518,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,105621.0
+2519,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2520,"Monto de otros préstamos otorgados a personas jurídicas a tasa variable, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2521,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,104622.0
+2522,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,101424.0
+2523,"Monto de otros préstamos otorgados a personas jurídicas a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3198.0
+2524,"Monto de otros préstamos otorgados a personas jurídicas a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2525,Saldo de adelantos en cuenta corriente otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,2197875452.0
+2526,Saldo de adelantos en cuenta corriente otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,2192594493.0
+2527,"Saldo de adelantos en cuenta corriente otorgados a PyMEs a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,201146232.0
+2528,"Saldo de adelantos en cuenta corriente otorgados a PyMEs a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,1991448261.0
+2529,Saldo de adelantos en cuenta corriente otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,5280959.0
+2530,Saldo de adelantos en cuenta corriente otorgados a PyMEs a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2531,Saldo de otros adelantos otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,49385324.0
+2532,Saldo de otros adelantos otorgados a PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,46096984.0
+2533,"Saldo de otros adelantos otorgados a PyMEs a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,12885594.0
+2534,"Saldo de otros adelantos otorgados a PyMEs a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,33211390.0
+2535,Saldo de otros adelantos otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,3288340.0
+2536,Saldo de otros adelantos otorgados a PyMEs a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2537,Monto de documentos a sola firma otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,927004392.0
+2538,Monto de documentos a sola firma otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,916002710.0
+2539,Monto de documentos a sola firma otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,11001682.0
+2540,Monto de documentos a sola firma otorgados a PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,103065370.0
+2541,Monto de documentos descontados otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2532091236.0
+2542,Monto de documentos descontados otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2529195529.0
+2543,Monto de documentos descontados otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2895707.0
+2544,Monto de documentos descontados otorgados a PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2545,Monto de documentos comprados otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,354221016.0
+2546,Monto de documentos comprados otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,345492421.0
+2547,Monto de documentos comprados otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,8728595.0
+2548,Monto de documentos comprados otorgados a PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2549,Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,27946318.0
+2550,Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,27946318.0
+2551,Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2552,Monto de préstamos hipotecarios otorgados a PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,26674489.0
+2553,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,27438018.0
+2554,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,27438018.0
+2555,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2556,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,23563489.0
+2557,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,508300.0
+2558,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,508300.0
+2559,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2560,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,3111000.0
+2561,Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija de más de 10 años ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2562,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2563,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2564,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2565,Monto de préstamos prendarios otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,34943490.0
+2566,Monto de préstamos prendarios otorgados a PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,30263348.0
+2567,Monto de préstamos prendarios otorgados a PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4680142.0
+2568,Monto de préstamos prendarios otorgados a PyMEs a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2348798.0
+2569,"Monto de préstamos prendarios otorgados a PyMEs a tasa fija, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,4621761.0
+2570,"Monto de préstamos prendarios otorgados a PyMEs a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1993344.0
+2571,"Monto de préstamos prendarios otorgados a PyMEs a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2628417.0
+2572,"Monto de préstamos prendarios otorgados a PyMEs a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,259464.0
+2573,Monto de préstamos prendarios otorgados a PyMEs a tasa fija de más de 1 año ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,30321729.0
+2574,"Monto de préstamos prendarios otorgados a PyMEs a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,28270004.0
+2575,"Monto de préstamos prendarios otorgados a PyMEs a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2051725.0
+2576,"Monto de préstamos prendarios otorgados a PyMEs a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2089334.0
+2577,Saldo de tarjetas de crédito de PyMEs a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,339755728.0
+2578,Saldo de tarjetas de crédito de PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,339755728.0
+2579,Saldo de tarjetas de crédito de PyMEs a tasa fija igual a cero igual a cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2580,Saldo de tarjetas de crédito de PyMEs a tasa variable,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2581,Monto de créditos documentarios otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2582,Monto de créditos documentarios otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2583,Monto de créditos documentarios otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2584,Monto de créditos documentarios otorgados a PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2585,Monto de otros préstamos otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,213914706.0
+2586,Monto de otros préstamos otorgados a PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,213063425.0
+2587,Monto de otros préstamos otorgados a PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,851281.0
+2588,Monto de otros préstamos otorgados a PyMEs a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,10347815.0
+2589,"Monto de otros préstamos otorgados a PyMEs a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,27955158.0
+2590,"Monto de otros préstamos otorgados a PyMEs a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,27157877.0
+2591,"Monto de otros préstamos otorgados a PyMEs a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,797281.0
+2592,"Monto de otros préstamos otorgados a PyMEs a tasa variable, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,116817.0
+2593,"Monto de otros préstamos otorgados a PyMEs a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,185959548.0
+2594,"Monto de otros préstamos otorgados a PyMEs a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,185905548.0
+2595,"Monto de otros préstamos otorgados a PyMEs a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,54000.0
+2596,"Monto de otros préstamos otorgados a PyMEs a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,10230998.0
+2597,Saldo de otros adelantos otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,95372.0
+2598,Saldo de otros adelantos otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,93906.0
+2599,"Saldo de otros adelantos otorgados a PyMEs a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,88338.0
+2600,"Saldo de otros adelantos otorgados a PyMEs a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,5568.0
+2601,Saldo de otros adelantos otorgados a PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,1467.0
+2602,Saldo de otros adelantos otorgados a PyMEs a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2603,Monto de documentos a sola firma otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,474316.0
+2604,Monto de documentos a sola firma otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,430765.0
+2605,Monto de documentos a sola firma otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,43551.0
+2606,Monto de documentos a sola firma otorgados a PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,654.0
+2607,Monto de documentos descontados otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,28.0
+2608,Monto de documentos descontados otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,28.0
+2609,Monto de documentos descontados otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2610,Monto de documentos descontados otorgados a PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2611,Monto de documentos comprados otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2612,Monto de documentos comprados otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2613,Monto de documentos comprados otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2614,Monto de documentos comprados otorgados a PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2615,Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,12669.0
+2616,Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,12669.0
+2617,Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2618,Monto de préstamos hipotecarios otorgados a PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3000.0
+2619,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,12669.0
+2620,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,12669.0
+2621,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2622,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2623,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2624,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2625,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2629,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2630,"Monto de préstamos hipotecarios otorgados a PyMEs a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2631,Monto de préstamos prendarios otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,8804.0
+2632,Monto de préstamos prendarios otorgados a PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,8760.0
+2633,Monto de préstamos prendarios otorgados a PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,44.0
+2634,Monto de préstamos prendarios otorgados a PyMEs a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2635,"Monto de préstamos prendarios otorgados a PyMEs a tasa fija, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2636,"Monto de préstamos prendarios otorgados a PyMEs a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2637,"Monto de préstamos prendarios otorgados a PyMEs a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2638,"Monto de préstamos prendarios otorgados a PyMEs a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2639,Monto de préstamos prendarios otorgados a PyMEs a tasa fija de más de 1 año ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,8804.0
+2640,"Monto de préstamos prendarios otorgados a PyMEs a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,8760.0
+2641,"Monto de préstamos prendarios otorgados a PyMEs a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,44.0
+2642,"Monto de préstamos prendarios otorgados a PyMEs a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2643,Saldos de tarjetas de crédito de PyMEs a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,78.0
+2644,Saldos de tarjetas de crédito de PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,78.0
+2645,Saldos de tarjetas de crédito de PyMEs a tasa fija igual a cero igual a cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2646,Saldos de tarjetas de crédito de PyMEs a tasa variable,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2647,Monto de créditos documentarios otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3970.0
+2648,Monto de créditos documentarios otorgados a PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,3937.0
+2649,Monto de créditos documentarios otorgados a PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,33.0
+2650,Monto de créditos documentarios otorgados a PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2651,Monto de otros préstamos otorgados a PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,59016.0
+2652,Monto de otros préstamos otorgados a PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,56055.0
+2653,Monto de otros préstamos otorgados a PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,2961.0
+2654,Monto de otros préstamos otorgados a PyMEs a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2655,"Monto de otros préstamos otorgados a PyMEs a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,1570.0
+2656,"Monto de otros préstamos otorgados a PyMEs a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,1570.0
+2657,"Monto de otros préstamos otorgados a PyMEs a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2658,"Monto de otros préstamos otorgados a PyMEs a tasa variable, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2659,"Monto de otros préstamos otorgados a PyMEs a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,57446.0
+2660,"Monto de otros préstamos otorgados a PyMEs a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,54485.0
+2661,"Monto de otros préstamos otorgados a PyMEs a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,2961.0
+2662,"Monto de otros préstamos otorgados a PyMEs a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2663,Saldo de adelantos en cuenta corriente otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,6646399868.0
+2664,Saldo de adelantos en cuenta corriente otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,6635400823.0
+2665,"Saldo de adelantos en cuenta corriente otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,174089335.0
+2666,"Saldo de adelantos en cuenta corriente otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,6461311488.0
+2667,Saldo de adelantos en cuenta corriente otorgados a personas jurídicas no PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,10999045.0
+2668,Saldo de adelantos en cuenta corriente otorgados a personas jurídicas no PyMEs a tasa variable,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,7950005.0
+2669,Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,407344789.0
+2670,Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,403297621.0
+2671,"Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,47752470.0
+2672,"Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,355545151.0
+2673,Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,4047168.0
+2674,Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,6.0
+2675,Monto de documentos a sola firma otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,702403585.0
+2676,Monto de documentos a sola firma otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,699157685.0
+2677,Monto de documentos a sola firma otorgados a personas jurídicas no PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,3245900.0
+2678,Monto de documentos a sola firma otorgados a personas jurídicas no PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,161506915.0
+2679,Monto de documentos descontados otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1221031957.0
+2680,Monto de documentos descontados otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1219275788.0
+2681,Monto de documentos descontados otorgados a personas jurídicas no PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1756169.0
+2682,Monto de documentos descontados otorgados a personas jurídicas no PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,654000.0
+2683,Monto de documentos comprados otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,369208785.0
+2684,Monto de documentos comprados otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,357887416.0
+2685,Monto de documentos comprados otorgados a personas jurídicas no PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,11321369.0
+2686,Monto de documentos comprados otorgados a personas jurídicas no PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2687,Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2546574.0
+2688,Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2546574.0
+2689,Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2690,Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,9626786.0
+2691,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1972774.0
+2692,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1972774.0
+2693,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2694,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,8615036.0
+2695,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,573800.0
+2696,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,573800.0
+2697,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2698,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1011750.0
+2699,Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija de más de 10 años ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2700,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2701,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2702,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2703,Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,48838220.0
+2704,Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,40569598.0
+2705,Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,8268622.0
+2706,Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,209457540.0
+2707,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,11150794.0
+2708,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,5245307.0
+2709,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,5905487.0
+2710,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,205651184.0
+2711,Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija de más de 1 año ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,37687426.0
+2712,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,35324291.0
+2713,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2363135.0
+2714,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,3806356.0
+2715,Saldo de tarjetas de crédito de personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,8852525.0
+2716,Saldo de tarjetas de crédito de personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,8852525.0
+2717,Saldo de tarjetas de crédito de personas jurídicas no PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2718,Saldo de tarjetas de crédito de personas jurídicas no PyMEs a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2719,Monto de créditos documentarios otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2720,Monto de créditos documentarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2721,Monto de créditos documentarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2722,Monto de créditos documentarios otorgados a personas jurídicas no PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,0.0
+2723,Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1159770087.0
+2724,Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1157524488.0
+2725,Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2245599.0
+2726,Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,35098548.0
+2727,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,559741703.0
+2728,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,557641104.0
+2729,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,2100599.0
+2730,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa variable, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,1927617.0
+2731,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,600028384.0
+2732,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,599883384.0
+2733,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,145000.0
+2734,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de ARS,ML,2010-07-31,2026-10-31,33170931.0
+2735,Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,93791.0
+2736,Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,93778.0
+2737,"Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,93778.0
+2738,"Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2739,Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,13.0
+2740,Saldo de otros adelantos otorgados a personas jurídicas no PyMEs a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2741,Monto de documentos a sola firma otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,1841705.0
+2742,Monto de documentos a sola firma otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,1811742.0
+2743,Monto de documentos a sola firma otorgados a personas jurídicas no PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,29963.0
+2744,Monto de documentos a sola firma otorgados a personas jurídicas no PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,2400.0
+2745,Monto de documentos descontados otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2746,Monto de documentos descontados otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2747,Monto de documentos descontados otorgados a personas jurídicas no PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2748,Monto de documentos descontados otorgados a personas jurídicas no PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2749,Monto de documentos comprados otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2750,Monto de documentos comprados otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2751,Monto de documentos comprados otorgados a personas jurídicas no PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2752,Monto de documentos comprados otorgados a personas jurídicas no PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2753,Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,464.0
+2754,Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,464.0
+2755,Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2756,Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa variable,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2757,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,464.0
+2758,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,464.0
+2759,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2760,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2761,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2762,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2763,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2764,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2765,Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija de más de 10 años ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2766,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2767,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2768,"Monto de préstamos hipotecarios otorgados a personas jurídicas no PyMEs a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2769,Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,8503.0
+2770,Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,8503.0
+2771,Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2772,Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2773,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2774,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2775,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2776,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2777,Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija de más de 1 año ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,8503.0
+2778,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,8503.0
+2779,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2780,"Monto de préstamos prendarios otorgados a personas jurídicas no PyMEs a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2781,Saldos de tarjetas de crédito de personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,490.0
+2782,Saldos de tarjetas de crédito de personas jurídicas no PyMEs a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,490.0
+2783,Saldos de tarjetas de crédito de personas jurídicas no PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2784,Saldos de tarjetas de crédito de personas jurídicas no PyMEs a tasa variable ,Tasas de interés de préstamos,Saldos,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2785,Monto de créditos documentarios otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,9089.0
+2786,Monto de créditos documentarios otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,9089.0
+2787,Monto de créditos documentarios otorgados a personas jurídicas no PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2788,Monto de créditos documentarios otorgados a personas jurídicas no PyMEs a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2789,Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,151227.0
+2790,Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,150990.0
+2791,Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,237.0
+2792,Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa variable ,Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2793,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,104051.0
+2794,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,104051.0
+2795,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2796,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa variable, de hasta 89 días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2797,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,47176.0
+2798,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,46939.0
+2799,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,237.0
+2800,"Monto de otros préstamos otorgados a personas jurídicas no PyMEs a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,M,En miles de USD,ME,2010-07-31,2026-10-31,0.0
+2801,Tasa de interés de adelantos en cuenta corriente otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,37.86
+2802,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,9259595376.0
+2803,Tasa de interés de adelantos en cuenta corriente otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,37.95
+2804,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,9235951262.0
+2805,"Tasa de interés de adelantos en cuenta corriente otorgados al sector privado a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,98.35
+2806,"Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,589535386.0
+2807,"Tasa de interés de adelantos en cuenta corriente otorgados al sector privado a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,33.83
+2808,"Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,8646415876.0
+2809,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,23644114.0
+2810,Saldo de adelantos en cuenta corriente otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2025-02-10,2026-10-30,7782942.0
+2811,Tasa de interés de otros adelantos otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,31.62
+2812,Saldo de otros adelantos otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,594875821.0
+2813,Tasa de interés de otros adelantos otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,35.89
+2814,Saldo de otros adelantos otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,524052733.0
+2815,"Tasa de interés de otros adelantos otorgados al sector privado a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,36.62
+2816,"Saldo de otros adelantos otorgados al sector privado a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,74685736.0
+2817,"Tasa de interés de otros adelantos otorgados al sector privado a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,35.77
+2818,"Saldo de otros adelantos otorgados al sector privado a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,449366997.0
+2819,"Saldo de otros adelantos otorgados al sector privado a tasa fija igual a cero, con acuerdo ",Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,70823088.0
+2820,Saldo de otros adelantos otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2016-02-10,2026-10-30,52.0
+2821,Tasa de interés de documentos a sola firma otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,30.19
+2822,Monto de documentos a sola firma otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,114180626.0
+2823,Tasa de interés de documentos a sola firma otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,30.62
+2824,Monto de documentos a sola firma otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,112581910.0
+2825,Monto de documentos a sola firma otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1598716.0
+2826,Monto de documentos a sola firma otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,52621929.0
+2827,Tasa de interés de documentos descontados otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,28.35
+2828,Monto de documentos descontados otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,232970789.0
+2829,Tasa de interés de documentos descontados otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,28.44
+2830,Monto de documentos descontados otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,232174771.0
+2831,Monto de documentos descontados otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2011-09-07,2026-10-30,796018.0
+2832,Monto de documentos descontados otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2013-07-05,2026-10-23,494000.0
+2833,Tasa de interés de documentos comprados otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,30.7
+2834,Monto de documentos comprados otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,35751360.0
+2835,Tasa de interés de documentos comprados otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,31.23
+2836,Monto de documentos comprados otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,35142495.0
+2837,Monto de documentos comprados otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2017-03-16,2026-10-30,608865.0
+2838,Monto de documentos comprados otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-12-17,2026-02-19,2000000.0
+2839,Tasa de interés de préstamos hipotecarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,31.61
+2840,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1840755.0
+2841,Tasa de interés de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,31.61
+2842,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1840755.0
+2843,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2018-05-30,2022-02-21,710.0
+2844,Monto de préstamos hipotecarios otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,23861889.0
+2845,"Tasa de interés de préstamos hipotecarios otorgados al sector privado a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,32.18
+2846,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1303374.0
+2847,"Tasa de interés de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,32.18
+2848,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1303374.0
+2849,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2018-05-30,2022-02-21,710.0
+2850,"Monto de préstamos hipotecarios otorgados al sector privado a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-02,2026-10-30,2465532.0
+2851,"Tasa de interés de préstamos hipotecarios otorgados al sector privado a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,33.0
+2852,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,340000.0
+2853,"Tasa de interés de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,33.0
+2854,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,340000.0
+2855,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,,
+2856,"Monto de préstamos hipotecarios otorgados al sector privado a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-05,2026-10-30,154734.0
+2857,Tasa de interés de préstamos hipotecarios otorgados al sector privado a tasa fija de más de 10 años ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,25.5
+2858,Monto de préstamos hipotecarios otorgados al sector privado a tasa fija de más de 10 años ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,197381.0
+2859,"Tasa de interés de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,25.5
+2860,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,197381.0
+2861,"Monto de préstamos hipotecarios otorgados al sector privado a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,,
+2862,"Monto de préstamos hipotecarios otorgados al sector privado a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,21241623.0
+2863,Tasa de interés de préstamos prendarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,21.11
+2864,Monto de préstamos prendarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,20288462.0
+2865,Tasa de interés de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,28.6
+2866,Monto de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,14975413.0
+2867,Monto de préstamos prendarios otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,5313049.0
+2868,Monto de préstamos prendarios otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,60579924.0
+2869,"Tasa de interés de préstamos prendarios otorgados al sector privado a tasa fija, de hasta 1 año ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,21.32
+2870,"Monto de préstamos prendarios otorgados al sector privado a tasa fija, de hasta 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,2346142.0
+2871,"Tasa de interés de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,39.03
+2872,"Monto de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1281943.0
+2873,"Monto de préstamos prendarios otorgados al sector privado a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1064199.0
+2874,"Monto de préstamos prendarios otorgados al sector privado a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-08-11,2026-10-30,58770833.0
+2875,Tasa de interés de préstamos prendarios otorgados al sector privado a tasa fija de más de 1 año ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,21.09
+2876,Monto de préstamos prendarios otorgados al sector privado a tasa fija de más de 1 año ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,17942320.0
+2877,"Tasa de interés de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,27.63
+2878,"Monto de préstamos prendarios otorgados al sector privado a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,13693470.0
+2879,"Monto de préstamos prendarios otorgados al sector privado a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-05,2026-10-30,4248850.0
+2880,"Monto de préstamos prendarios otorgados al sector privado a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1809091.0
+2881,Tasa de interés de personales y tarjetas de crédito del sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,76.1
+2882,Monto de personales y tarjetas de crédito del sector privado a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,604310311.0
+2883,Tasa de interés de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,76.1
+2884,Monto de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,604299281.0
+2885,Monto de personales y tarjetas de crédito del sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,11030.0
+2886,Monto de personales y tarjetas de crédito del sector privado a tasa variable ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-05,2026-10-30,5728628.0
+2887,"Tasa de interés de personales y tarjetas de crédito del sector privado a tasa fija, de hasta 180 días ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,77.92
+2888,"Monto de personales y tarjetas de crédito del sector privado a tasa fija, de hasta 180 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,547460387.0
+2889,"Tasa de interés de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,77.92
+2890,"Monto de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,547457670.0
+2891,"Monto de personales y tarjetas de crédito del sector privado a tasa fija igual a cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,2717.0
+2892,"Monto de personales y tarjetas de crédito del sector privado a tasa variable, de hasta 180 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-23,2026-10-30,5191.0
+2893,"Tasa de interés de personales y tarjetas de crédito del sector privado a tasa fija, de más de 180 días",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,58.52
+2894,"Monto de personales y tarjetas de crédito del sector privado a tasa fija, de más de 180 días",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,56849924.0
+2895,"Tasa de interés de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero, de más de 180 días",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,58.53
+2896,"Monto de personales y tarjetas de crédito del sector privado a tasa fija distinta de cero, de más de 180 días",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,56841611.0
+2897,"Monto de personales y tarjetas de crédito del sector privado a tasa fija igual a cero, de más de 180 días",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,8313.0
+2898,"Monto de personales y tarjetas de crédito del sector privado a tasa variable, de más de 180 días",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-05,2026-10-30,5723437.0
+2899,Tasa de interés por préstamos personales a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-11-17,61.94
+2900,Monto de préstamos personales a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,61061749.0
+2901,Tasa de interés por préstamos personales a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-11-17,61.96
+2902,Monto de préstamos personales a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,61050719.0
+2903,Monto de préstamos personales a tasa fija igual a cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,11030.0
+2904,Monto de préstamos personales a tasa variable,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-05,2026-10-30,5728628.0
+2905,"Tasa de interés por préstamos personales a tasa fija, de hasta 180 días",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-11-17,81.98
+2906,"Monto de préstamos personales a tasa fija, de hasta 180 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,4211825.0
+2907,"Tasa de interés por préstamos personales a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-11-17,81.99
+2908,"Monto de préstamos personales a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,4209108.0
+2909,"Monto de préstamos personales a tasa fija igual a cero, de hasta 180 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-02,2026-10-30,2717.0
+2910,"Monto de préstamos personales a tasa variable, de hasta 180 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-23,2026-10-30,5191.0
+2911,"Tasa de interés por préstamos personales a tasa fija, de más de 180 días ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-11-17,59.05
+2912,"Monto de préstamos personales a tasa fija, de más de 180 días",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,56849924.0
+2913,"Tasa de interés por préstamos personales a tasa fija distinta de cero, de más de 180 días ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-11-17,59.07
+2914,"Monto de préstamos personales a tasa fija distinta de cero, de más de 180 días",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,56841611.0
+2915,"Monto de préstamos personales a tasa fija igual a cero, de más de 180 días",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,8313.0
+2916,"Monto de préstamos personales a tasa variable, de más de 180 días",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-05,2026-10-30,5723437.0
+2917,Tasa de interés de tarjetas de crédito del sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,77.88
+2918,Saldo de tarjetas de crédito del sector privado a tasa fija ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,543248562.0
+2919,Tasa de interés de tarjetas de crédito del sector privado a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,77.88
+2920,Saldo de tarjetas de crédito del sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,543248562.0
+2921,Saldo de tarjetas de crédito del sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2025-12-29,25671.0
+2922,Saldo de tarjetas de crédito del sector privado a tasa variable ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,,
+2923,Tasa de interés de créditos documentarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2026-03-13,2026-03-13,7.9
+2924,Monto de créditos documentarios otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2014-10-29,2026-03-13,45680.0
+2925,Tasa de interés de créditos documentarios otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2026-03-13,2026-03-13,7.9
+2926,Monto de créditos documentarios otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2026-03-13,2026-03-13,45680.0
+2927,Monto de créditos documentarios otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2014-10-29,2024-06-19,22228.0
+2928,Monto de créditos documentarios otorgados al sector privado a tasa variable,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2014-10-29,,
+2929,Tasa de interés de otros préstamos otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,30.28
+2930,Monto de otros préstamos otorgados al sector privado a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,51730416.0
+2931,Tasa de interés de otros préstamos otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,30.42
+2932,Monto de otros préstamos otorgados al sector privado a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,51483456.0
+2933,Monto de otros préstamos otorgados al sector privado a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,246960.0
+2934,Monto de otros préstamos otorgados al sector privado a tasa variable ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,7325609.0
+2935,"Tasa de interés de otros préstamos otorgados al sector privado a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,22.51
+2936,"Monto de otros préstamos otorgados al sector privado a tasa fija, de hasta 89 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,12250548.0
+2937,"Tasa de interés de otros préstamos otorgados al sector privado a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,22.98
+2938,"Monto de otros préstamos otorgados al sector privado a tasa fija distinta de cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,12003588.0
+2939,"Monto de otros préstamos otorgados al sector privado a tasa fija de igual a cero, de hasta 89 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,246960.0
+2940,"Monto de otros préstamos otorgados al sector privado a tasa variable, de hasta 89 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-16,2026-10-30,1034560.0
+2941,"Tasa de interés de otros préstamos otorgados al sector privado a tasa fija, de 90 y más días",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,32.69
+2942,"Monto de otros préstamos otorgados al sector privado a tasa fija, de 90 y más días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,39479868.0
+2943,"Tasa de interés de otros préstamos otorgados al sector privado a tasa fija distinta de cero, de 90 y más días",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,32.69
+2944,"Monto de otros préstamos otorgados al sector privado a tasa fija distinta de cero, de 90 y más días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,39479868.0
+2945,"Monto de otros préstamos otorgados al sector privado a tasa fija igual a cero, de 90 y más días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-06,2026-10-29,4950.0
+2946,"Monto de otros préstamos otorgados al sector privado a tasa variable, de 90 y más días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,6291049.0
+2947,Tasa de interés de adelantos en cuenta corriente otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,88.9
+2948,Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,875546227.0
+2949,Tasa de interés de adelantos en cuenta corriente otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,89.53
+2950,Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,869333896.0
+2951,"Tasa de interés de adelantos en cuenta corriente otorgados a personas humanas a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,138.58
+2952,"Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,262284682.0
+2953,"Tasa de interés de adelantos en cuenta corriente otorgados a personas humanas a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,68.34
+2954,"Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,607049214.0
+2955,Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,6212331.0
+2956,Saldo de adelantos en cuenta corriente otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,,
+2957,Tasa de interés de otros adelantos otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,40.25
+2958,Saldo de otros adelantos otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,162236248.0
+2959,Tasa de interés de otros adelantos otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,61.35
+2960,Saldo de otros adelantos otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,106452989.0
+2961,"Tasa de interés de otros adelantos otorgados a personas humanas a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,54.38
+2962,"Saldo de otros adelantos otorgados a personas humanas a tasa fija distinta de cero, sin acuerdo ",Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,15506936.0
+2963,"Tasa de interés de otros adelantos otorgados a personas humanas a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,62.53
+2964,"Saldo de otros adelantos otorgados a personas humanas a tasa fija distinta de cero, con acuerdo ",Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,90946053.0
+2965,Saldo de otros adelantos otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2010-07-01,2026-10-30,55783259.0
+2966,Saldo de otros adelantos otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Saldos,D,En miles de ARS,ML,2018-06-01,2026-10-30,46.0
+2967,Tasa de interés de documentos a sola firma otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,31.97
+2968,Monto de documentos a sola firma otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,15458752.0
+2969,Tasa de interés de documentos a sola firma otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,32.1
+2970,Monto de documentos a sola firma otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,15399903.0
+2971,Monto de documentos a sola firma otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,58849.0
+2972,Monto de documentos a sola firma otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,561323.0
+2973,Tasa de interés de documentos descontados otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,29.47
+2974,Monto de documentos descontados otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,31254297.0
+2975,Tasa de interés de documentos descontados otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,30.01
+2976,Monto de documentos descontados otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,30694914.0
+2977,Monto de documentos descontados otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2016-09-08,2026-10-30,559383.0
+2978,Monto de documentos descontados otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2014-03-21,2026-10-16,57000.0
+2979,Tasa de interés de documentos comprados otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,46.23
+2980,Monto de documentos comprados otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,5348192.0
+2981,Tasa de interés de documentos comprados otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,46.23
+2982,Monto de documentos comprados otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,5348192.0
+2983,Monto de documentos comprados otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2024-09-19,2026-10-01,568988.0
+2984,Monto de documentos comprados otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2011-01-07,2017-02-14,307.0
+2985,Tasa de interés de préstamos hipotecarios otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,29.94
+2986,Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1012181.0
+2987,Tasa de interés de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,29.94
+2988,Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1012181.0
+2989,Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2022-02-21,2022-02-21,710.0
+2990,Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,21551549.0
+2991,"Tasa de interés de préstamos hipotecarios otorgados a personas humanas a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,31.01
+2992,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija, de hasta 5 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,814800.0
+2993,"Tasa de interés de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,31.01
+2994,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,814800.0
+2995,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero, de hasta 5 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2022-02-21,2022-02-21,710.0
+2996,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable, de hasta 5 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-08,2026-10-30,155192.0
+2997,"Tasa de interés de préstamos hipotecarios otorgados a personas humanas a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-29,30.0
+2998,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-29,75000.0
+2999,"Tasa de interés de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-29,30.0
+3000,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-29,75000.0
+3001,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,,
+3002,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable, de más de 5 años y hasta 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-05,2026-10-30,154734.0
+3003,Tasa de interés de préstamos hipotecarios otorgados a personas humanas a tasa fija de más de 10 años ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,25.5
+3004,Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija de más de 10 años ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,197381.0
+3005,"Tasa de interés de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,25.5
+3006,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija distinta de cero, de más de 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,197381.0
+3007,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa fija igual a cero, de más de 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,,
+3008,"Monto de préstamos hipotecarios otorgados a personas humanas a tasa variable, de más de 10 años ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,21241623.0
+3009,Tasa de interés de préstamos prendarios otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,19.94
+3010,Monto de préstamos prendarios otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,13035580.0
+3011,Tasa de interés de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,31.57
+3012,Monto de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,8234454.0
+3013,Monto de préstamos prendarios otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,4801126.0
+3014,Monto de préstamos prendarios otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-02,2026-10-30,1803351.0
+3015,"Tasa de interés de préstamos prendarios otorgados a personas humanas a tasa fija, de hasta 1 año ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,17.26
+3016,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija, de hasta 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1512285.0
+3017,"Tasa de interés de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,53.81
+3018,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,485086.0
+3019,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija igual a cero, de hasta 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,1027199.0
+3020,"Monto de préstamos prendarios otorgados a personas humanas a tasa variable, de hasta 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-09-02,2026-10-30,14500.0
+3021,Tasa de interés de préstamos prendarios otorgados a personas humanas a tasa fija de más de 1 año ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,20.3
+3022,Monto de préstamos prendarios otorgados a personas humanas a tasa fija de más de 1 año ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,11523295.0
+3023,"Tasa de interés de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,30.18
+3024,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija distinta de cero, de más de 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,7749368.0
+3025,"Monto de préstamos prendarios otorgados a personas humanas a tasa fija igual a cero, de más de 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-05,2026-10-30,3773927.0
+3026,"Monto de préstamos prendarios otorgados a personas humanas a tasa variable, de más de 1 año ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-02,2026-10-30,1788851.0
+3027,Tasa de interés de personales y tarjetas de crédito otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,76.1
+3028,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,604262274.0
+3029,Tasa de interés de personales y tarjetas de crédito otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,76.1
+3030,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija distinta de cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,604251244.0
+3031,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija igual a cero ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,11030.0
+3032,Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa variable ,Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-05,2026-10-30,5728628.0
+3033,"Tasa de interés de personales y tarjetas de crédito otorgados a personas humanas a tasa fija, de hasta 180 días ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,77.92
+3034,"Monto de personales y tarjetas de crédito otorgados a personas humanas a tasa fija, de hasta 180 días ",Tasas de interés de préstamos,Monto,D,En miles de ARS,ML,2010-07-01,2026-10-30,547412350.0
+3035,"Tasa de interés de personales y tarjetas de crédito otorgados a personas humanas a tasa fija distinta de cero, de hasta 180 días ",Tasas de interés de préstamos,Tasa de interés,D,En porcentaje nominal anual,ML,2010-07-01,2026-10-30,77.92
