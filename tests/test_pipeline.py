@@ -715,23 +715,25 @@ def test_racconto_de_la_semana(tmp_path):
     assert report.racconto(pd.Timestamp("2026-11-06"), tmp_path) == ""
 
 
-def test_mail_del_reporte(tmp_path):
+def test_mail_de_las_claves(tmp_path):
     import email
-    import pandas as pd
+    import json
     from monitor import enviar
-    pdf = tmp_path / "reporte-semanal-2026-10-30.pdf"
-    pdf.write_bytes(b"%PDF-1.4 prueba")
-    textos = tmp_path / "textos"; textos.mkdir()
-    (textos / "2026-10-30.md").write_text("Semana **tranquila**.", encoding="utf-8")
-    panel = tmp_path / "panel.csv"
-    pd.DataFrame({"indice_0_100": [48.0, 54.0]}, index=pd.to_datetime(["2026-10-23", "2026-10-30"])).rename_axis("fecha").to_csv(panel)
-    m = enviar.armar_mensaje(pdf, "yo@fund.ar", ["a@x.com", "b@y.com"], panel, textos)
-    assert "26 al 30 de oct. 2026" in m["Subject"] and m["Bcc"] == "a@x.com, b@y.com"
+    datos = tmp_path / "monitor.json"
+    datos.write_text(json.dumps({"claves": {
+        "fecha": "2026-10-30", "semana_txt": "26 al 30 de octubre", "indice": 54.0, "indice_previo": 48.0,
+        "bloques": {"cambiaria": {"label": "Presión cambiaria", "v1": 60.0, "v0": 55.0}},
+        "texto": "<p>Semana <b>tranquila</b>.</p>",
+        "items": [{"titular": "Aumenta la presión sobre el peso.", "bajada": "El índice subió 6 puntos."}]}}), encoding="utf-8")
+    m = enviar.armar_mensaje("yo@fund.ar", ["a@x.com", "b@y.com"], datos)
+    assert "26 al 30 de octubre" in m["Subject"] and m["Bcc"] == "a@x.com, b@y.com"
     msg = email.message_from_bytes(bytes(m))
     partes = {p.get_content_type(): p for p in msg.walk()}
-    assert "54/100" in partes["text/plain"].get_payload(decode=True).decode()
-    assert "<b>tranquila</b>" in partes["text/html"].get_payload(decode=True).decode()
-    assert partes["application/pdf"].get_filename() == pdf.name
+    plano = partes["text/plain"].get_payload(decode=True).decode()
+    assert "Aumenta la presión sobre el peso." in plano and "54,0/100" in plano and "Semana tranquila." in plano
+    h = partes["text/html"].get_payload(decode=True).decode()
+    assert "<b>tranquila</b>" in h and "elibman36.github.io/dolarizacion" in h
+    assert "application/pdf" not in partes and "image/png" in partes
 
 
 def test_tope_de_peso_por_componente():

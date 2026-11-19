@@ -562,11 +562,33 @@ def run(offline: bool = False) -> dict:
     for c in payload["ipd"]["components"]:
         if c["key"] in APENDICE_AR:
             c["ayuda"] = APENDICE_AR[c["key"]][0]
-    payload["claves"] = claves.generar(payload)
+    payload["claves"] = claves_de_la_semana(out_panel, ipd, payload)
     config.OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     h = payload["headline"]
     log.info("IPD %s = %s | índice 0-100 = %s (%s)", h["date"], h["ipd"], h["indice"], h["status_label"])
     return payload
+
+
+def claves_de_la_semana(p: pd.DataFrame, ipd: dict, payload: dict) -> dict:
+    """Claves de la última semana cerrada: del lunes al viernes, contra el
+    viernes anterior (si el viernes fue feriado, el último dato de la semana)."""
+    from .report import racconto
+
+    fechas = ipd["indice"].dropna().index
+    viernes = fechas[-1] - pd.Timedelta(days=(fechas[-1].weekday() - 4) % 7)
+    hasta = indicators._ultimo_hasta
+    meta = {c["key"]: c for c in payload["ipd"]["components"]}
+    comps = [k for k in meta if f"pts_{k}" in p]
+    semana = {
+        "i1": _clean(hasta(p["indice_0_100"], viernes)),
+        "i0": _clean(hasta(p["indice_0_100"], viernes - pd.Timedelta(days=7))),
+        "componentes": {k: _clean(v) for k, v in indicators.cambio_por_componente(p, viernes, comps).items()},
+        "bloques": {b: {"label": spec["label"],
+                        "v1": _clean(hasta(p[f"indice_bloque_{b}"], viernes)),
+                        "v0": _clean(hasta(p[f"indice_bloque_{b}"], viernes - pd.Timedelta(days=7)))}
+                    for b, spec in config.IPD_BLOCKS.items() if f"indice_bloque_{b}" in p},
+    }
+    return claves.generar(f"{viernes:%Y-%m-%d}", semana, texto=racconto(viernes))
 
 
 def main() -> None:

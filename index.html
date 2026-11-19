@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,32 +30,6 @@
   --nav-bg: #161615; --nav-ink: #F2F2F2; --nav-muted: #999999;
   --tt-bg: #161615; --tt-ink: #F2F2F2;
   --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --page: #161615; --surface: #1E1E1C; --ink: #F2F2F2; --ink-2: #B3B3B3;
-    --muted: #8A8983; --grid: #34342F; --axis: #55544F;
-    --border: rgba(255,255,255,0.10); --wash: rgba(255,255,255,0.06);
-    --s1: #8EE0BF; --s2: #E06A6D; --s3: #87B2C1; --s4: #C6BF93; --s5: #9695B3; --s6: #B08968;
-    --div-neg: #5BBA91; --div-pos: #ED8688; --div-mid: #3A3A36;
-    --up-bad: #ED8688; --down-good: #5BBA91;
-    --dv-aprec_fuerte: #A8E8CD; --dv-aprec: #3B9E78; --dv-neutral: #77766F; --dv-deprec: #C4505A; --dv-deprec_fuerte: #F6B9BA;
-    --verde-palido: #24372F; --nav-bg: #0C0C0B;
-    --tt-bg: #F2F2F2; --tt-ink: #161615;
-  }
-}
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --page: #161615; --surface: #1E1E1C; --ink: #F2F2F2; --ink-2: #B3B3B3;
-  --muted: #8A8983; --grid: #34342F; --axis: #55544F;
-  --border: rgba(255,255,255,0.10); --wash: rgba(255,255,255,0.06);
-  --s1: #8EE0BF; --s2: #E06A6D; --s3: #87B2C1; --s4: #C6BF93; --s5: #9695B3; --s6: #B08968;
-  --div-neg: #5BBA91; --div-pos: #ED8688; --div-mid: #3A3A36;
-  --up-bad: #ED8688; --down-good: #5BBA91;
-  --dv-aprec_fuerte: #A8E8CD; --dv-aprec: #3B9E78; --dv-neutral: #77766F; --dv-deprec: #C4505A; --dv-deprec_fuerte: #F6B9BA;
-  --verde-palido: #24372F; --nav-bg: #0C0C0B;
-  --tt-bg: #F2F2F2; --tt-ink: #161615;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; }
@@ -107,7 +81,6 @@ h2 { font-size: 17px; line-height: 1.25; font-weight: 700; margin: 0 0 3px; }
 [hidden] { display: none !important; }
 .kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin-top: 14px; font-size: 13px; color: var(--ink-2); }
 .kv b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
-#theme { font-family: system-ui, sans-serif; font-size: 15px; line-height: 1; padding: 5px 11px; }
 .kv b small { font-weight: 400; color: var(--muted); }
 .kv .sw { display: inline-block; width: 12px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
 .subs-t { margin-top: 14px; font-size: 12px; color: var(--muted); }
@@ -170,6 +143,11 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .claves-pie { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; margin-top: 16px; }
 .claves-pie a.ir { color: var(--ink); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--verde); }
 .claves-pie a.ir:hover { color: var(--verde); }
+.claves-texto { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 12px; }
+.claves-texto summary { cursor: pointer; font-weight: 600; font-size: 14px; color: var(--ink); }
+.claves-texto summary:hover { color: var(--verde); }
+.claves-texto div { max-width: 760px; margin-top: 8px; color: var(--ink-2); font-size: 14.5px; }
+.claves-texto h3 { font-size: 15px; color: var(--ink); margin: 14px 0 4px; }
 .acciones { display: flex; flex-wrap: wrap; gap: 6px; }
 .lead { color: #BDBDBD; font-size: 13.5px; margin: 6px 0 0; max-width: 620px; }
 /* Hero: lectura rápida del índice y los subíndices */
@@ -247,9 +225,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
       <div class="seg" id="range" role="group" aria-label="Período">
         <button data-r="90">3M</button><button data-r="182">6M</button><button data-r="365" aria-pressed="true">1A</button><button data-r="730">2A</button><button data-r="1825">5A</button><button data-r="3650">10A</button><button data-r="0">Todo</button>
       </div>
-      <a class="btn" id="lnk-pdf" href="reportes/ultimo.pdf" target="_blank" rel="noopener">Reporte semanal (PDF)</a>
       <button class="btn" id="btn-anexo" type="button">Anexo metodológico</button>
-      <button class="btn" id="theme" type="button" aria-label="Cambiar tema">◐</button>
     </div>
   </header>
 
@@ -266,8 +242,9 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
       </div>
     </div>
     <div class="claves-items" id="claves-items"></div>
+    <details class="claves-texto" id="claves-texto" hidden><summary>Leer la semana completa</summary><div id="claves-texto-c"></div></details>
     <div class="claves-pie">
-      <a class="ir" id="claves-reporte" href="reportes/ultimo.pdf" target="_blank" rel="noopener">Consultar el reporte semanal completo ↗</a>
+      <a class="ir" id="claves-suscribir" href="#" hidden>Recibir las claves por mail ↗</a>
       <span class="note" id="claves-origen"></span>
     </div>
   </section>
@@ -355,11 +332,10 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
         </ul>
       </div>
       <div>
-        <h2>Recibí el reporte semanal</h2>
-        <p class="note">Cada semana, el índice, las claves y lo que lo movió, en un PDF de seis páginas.</p>
+        <h2>Recibí las claves de la semana</h2>
+        <p class="note">Cada sábado, las claves de la semana y lo que movió el índice, en tu correo.</p>
         <ul>
-          <li><a class="btn" id="lnk-suscribir" href="#" hidden>Suscribirme al reporte semanal</a></li>
-          <li><a class="btn" id="lnk-reporte2" href="reportes/ultimo.pdf" target="_blank" rel="noopener">Ver el último reporte</a></li>
+          <li><a class="btn" id="lnk-suscribir" href="#" hidden>Suscribirme</a></li>
         </ul>
         <p class="cita" id="cita"></p>
       </div>
@@ -428,7 +404,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     <p>Las reservas, los depósitos, la tasa y el tipo de cambio real cuentan por su movimiento de los últimos 5 días hábiles; el resto, por su nivel frente a los dos años anteriores. Los pesos salen de componentes principales:</p>
     <div class="table-wrap"><table id="pesos-tbl"><thead><tr><th>Subíndice</th><th>Componente</th><th class="num">Peso en el subíndice</th><th class="num">Peso en el índice</th></tr></thead><tbody></tbody></table></div>
     <p class="note" id="pesos-nota"></p>
-    <p class="note">Detalle de la metodología en el reporte semanal y en el repositorio.</p>
+    <p class="note">Detalle de la metodología en el repositorio del proyecto.</p>
 </dialog>
 <script>
 (() => {
@@ -470,7 +446,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   ];
 
   // Dirección pública del tablero (para los enlaces que se comparten) y casilla
-  // para suscribirse al reporte semanal (vacía: no se muestra el botón).
+  // para suscribirse a las claves semanales (vacía: no se muestra el botón).
   const PUBLICO = "https://elibman36.github.io/dolarizacion/";
   const SUSCRIPCION = "";
   const FUENTES_TODAS = "BCRA, ArgentinaDatos, A3 Mercados y Secretaría de Finanzas";
@@ -524,19 +500,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   let DATA = null;
   let rangeDays = 365;
 
-  // ---- tema -------------------------------------------------------------
-  const themeBtn = document.getElementById("theme");
-  try { const t = localStorage.getItem("md-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-  themeBtn.addEventListener("click", () => {
-    const dark = document.documentElement.dataset.theme
-      ? document.documentElement.dataset.theme === "dark"
-      : matchMedia("(prefers-color-scheme: dark)").matches;
-    const next = dark ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
-    try { localStorage.setItem("md-theme", next); } catch (e) {}
-    redibujar();
-  });
-  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => redibujar());
+  // Siempre en tema claro.
   function redibujar() { if (DATA) renderAll(); }
 
   // ---- anexo metodológico ---------------------------------------------
@@ -650,7 +614,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     const st = STATUS[h.status] || STATUS.unknown;
     document.getElementById("hero-num").textContent = h.indice == null ? "–" : nf(h.indice, 1);
     const dl = deltaSemana(h.indice, h.indice_7d);
-    document.getElementById("hero-delta").innerHTML = dl ? `${dl}<small>Respecto de la semana anterior</small>` : "";
+    document.getElementById("hero-delta").innerHTML = dl ? `${dl}<small>Respecto de hace una semana</small>` : "";
     document.getElementById("hero-pill").innerHTML =
       `<span class="dot" style="background:${st.color}" aria-hidden="true">${st.icon}</span><span>${h.status_label}</span>`;
     const bar = document.getElementById("gauge-bar");
@@ -679,24 +643,21 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     const box = document.getElementById("claves");
     if (!cl || !cl.items || !cl.items.length) { box.hidden = true; return; }
     box.hidden = false;
-    document.getElementById("claves-fecha").textContent = cl.fecha_txt || "";
+    document.getElementById("claves-fecha").textContent = cl.semana_txt || cl.fecha_txt || "";
     const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;");
     document.getElementById("claves-items").innerHTML = cl.items.map((it) =>
       `<div class="clave"><b>${esc(it.titular)}${ayuda(it.ayuda)}</b><p>${esc(it.bajada)}</p></div>`).join("");
     document.getElementById("claves-origen").textContent = cl.origen === "editorial"
       ? "Lectura de Fundar." : "";
-    const lnk = document.getElementById("lnk-pdf");
-    ["claves-reporte", "lnk-reporte2"].forEach((id) => {
-      const a = document.getElementById(id);
-      if (a && lnk) { a.href = lnk.getAttribute("href"); if (!/\.pdf$/.test(a.href)) a.removeAttribute("target"); }
-    });
+    const tx = document.getElementById("claves-texto");
+    tx.hidden = !cl.texto;
+    document.getElementById("claves-texto-c").innerHTML = cl.texto || "";
   }
 
   function textoClaves() {
     const cl = DATA.claves;
-    return `Dolarómetro de Fundar · Las claves de la semana (${cl.fecha_txt})\n\n` +
-      cl.items.map((it) => `• ${it.titular} ${it.bajada}`).join("\n") +
-      `\n\nÍndice de Dolarización: ${nf(DATA.headline.indice, 1)}/100 (${DATA.headline.status_label.toLowerCase()}).\n${PUBLICO}`;
+    return `Dolarómetro de Fundar · Las claves de la semana del ${cl.semana_txt}\n\n` +
+      cl.items.map((it) => `• ${it.titular} ${it.bajada}`).join("\n") + `\n\n${PUBLICO}`;
   }
 
   function renderTiles() {
@@ -1220,7 +1181,9 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 
   // Tarjeta de las claves de la semana para redes (4:5 o más alta).
   async function tarjetaClaves() {
-    const cl = DATA.claves, h = DATA.headline;
+    const cl = DATA.claves;
+    const tr = (DATA.config.tramos || []).find((t) => cl.indice >= t.from && cl.indice < t.to);
+    const h = { indice: cl.indice, indice_7d: cl.indice_previo, status_label: tr ? tr.label : "" };
     const W = 1080, S = 2, M = 72, ancho = W - 2 * M;
     const cv = document.createElement("canvas"); const ctx = cv.getContext("2d");
     const bloques = cl.items.map((it) => {
@@ -1241,7 +1204,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     ctx.textAlign = "left";
     let y = 180 + 76;
     ctx.fillStyle = MARCA.verde; ctx.font = `700 22px ${MARCA.f}`;
-    ctx.fillText(`LAS CLAVES DE LA SEMANA  |  ${String(cl.fecha_txt).toUpperCase()}`, M, y);
+    ctx.fillText(`LAS CLAVES DE LA SEMANA  |  ${String(cl.semana_txt).toUpperCase()}`, M, y);
     y += 74; ctx.fillStyle = MARCA.ink; ctx.font = `italic 700 62px ${MARCA.f}`;
     ctx.fillText("El dólar, bajo la lupa", M, y);
     // El índice, con su barra.
@@ -1252,7 +1215,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     ctx.fillStyle = d == null || Math.abs(d) < 0.05 ? MARCA.ink2 : d > 0 ? "#C4505A" : "#2E8A66";
     ctx.fillText(d == null ? "" : Math.abs(d) < 0.05 ? "Sin cambios" : `${d > 0 ? "↑" : "↓"} ${nf(Math.abs(d), 1)} puntos`, M + wn + 22, y - 44);
     ctx.fillStyle = MARCA.ink2; ctx.font = `400 22px ${MARCA.f}`;
-    ctx.fillText(`Índice de Dolarización · ${h.status_label} · respecto de la semana anterior`, M + wn + 22, y - 10);
+    ctx.fillText(`Índice de Dolarización al cierre del viernes · ${h.status_label}`, M + wn + 22, y - 10);
     y += 36;
     const tramos = DATA.config.tramos || []; let x = M;
     const colT = { aprec_fuerte: "#1F6B4E", aprec: "#6ECFA8", neutral: "#B8B5AC", deprec: "#ED8688", deprec_fuerte: "#C4505A" };
@@ -1310,11 +1273,11 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     guardar(new Blob([txt], { type: "text/csv;charset=utf-8" }), `fundar-dolarizacion-${nom}-${f}.csv`);
   }));
   function renderAbiertos() {
-    const sus = document.getElementById("lnk-suscribir");
-    if (SUSCRIPCION) {
+    if (SUSCRIPCION) ["lnk-suscribir", "claves-suscribir"].forEach((id) => {
+      const sus = document.getElementById(id);
       sus.hidden = false;
-      sus.href = `mailto:${SUSCRIPCION}?subject=${encodeURIComponent("Suscripción al reporte semanal del Dolarómetro")}&body=${encodeURIComponent("Hola, quiero recibir el reporte semanal del Dolarómetro.\n\nNombre:\nOrganización:")}`;
-    }
+      sus.href = `mailto:${SUSCRIPCION}?subject=${encodeURIComponent("Suscripción a las claves semanales del Dolarómetro")}&body=${encodeURIComponent("Hola, quiero recibir las claves semanales del Dolarómetro.\n\nNombre:\nOrganización:")}`;
+    });
     document.getElementById("cita").innerHTML = `<b>Cómo citar:</b> Fundar (${(DATA.headline.date || "").slice(0, 4)}). <i>Dolarómetro</i>. Datos al ${fechaLarga(DATA.headline.date)}. ${PUBLICO}`;
   }
 

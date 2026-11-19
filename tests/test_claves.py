@@ -1,26 +1,21 @@
 from monitor import claves
 
 
-def _payload(i1=47.7, i0=46.9):
+def _semana(i1=47.7, i0=46.9):
     return {
-        "headline": {"date": "2026-11-19", "indice": i1, "indice_7d": i0},
-        "ipd": {
-            "components": [
-                {"key": "reservas", "cambio_semana": -2.0},
-                {"key": "vol_ccl", "cambio_semana": 0.8},
-            ],
-            "blocks": {
-                "cambiaria": {"label": "Presión cambiaria", "indice_last": 44, "indice_7d": 43},
-                "dolarizacion": {"label": "Dolarización de portafolios", "indice_last": 26, "indice_7d": 29},
-                "extranjerizacion": {"label": "Extranjerización de portafolios", "indice_last": 68, "indice_7d": 65},
-            },
+        "i1": i1, "i0": i0,
+        "componentes": {"reservas": -2.0, "vol_ccl": 0.8},
+        "bloques": {
+            "cambiaria": {"label": "Presión cambiaria", "v1": 44, "v0": 43},
+            "dolarizacion": {"label": "Dolarización de portafolios", "v1": 26, "v0": 29},
+            "extranjerizacion": {"label": "Extranjerización de portafolios", "v1": 68, "v0": 65},
         },
     }
 
 
 def test_claves_automaticas(tmp_path):
-    c = claves.generar(_payload(45.0, 48.0), dir_=tmp_path)
-    assert c["origen"] == "automatico" and c["fecha_txt"] == "19 de noviembre"
+    c = claves.generar("2026-11-13", _semana(45.0, 48.0), dir_=tmp_path)
+    assert c["origen"] == "automatico" and c["semana_txt"] == "9 al 13 de noviembre"
     tit = [i["titular"] for i in c["items"]]
     assert tit[0] == "Se amplía el alivio sobre el peso."
     assert tit[1] == "Las reservas subieron."  # bajó el índice: lo explica la suba de reservas
@@ -29,10 +24,14 @@ def test_claves_automaticas(tmp_path):
     assert 3 <= len(c["items"]) <= 4
 
 
+def test_etiqueta_semana_entre_meses():
+    assert claves.etiqueta_semana("2026-10-02") == "28 de septiembre al 2 de octubre"
+
+
 def test_claves_editoriales(tmp_path):
-    (tmp_path / "2026-11-17.md").write_text("<!-- nota -->\n**Se modera la presión.** El índice bajó.\n\n**Segunda.** Texto\nen dos líneas.\n", encoding="utf-8")
-    (tmp_path / "2026-11-01.md").write_text("**Vieja.** No va.\n", encoding="utf-8")
-    c = claves.generar(_payload(), dir_=tmp_path)
-    assert c["origen"] == "editorial" and c["fecha"] == "2026-11-17"
+    (tmp_path / "2026-11-15.md").write_text("<!-- nota -->\n**Se modera la presión.** El índice bajó.\n\n**Segunda.** Texto\nen dos líneas.\n", encoding="utf-8")
+    (tmp_path / "2026-11-06.md").write_text("**De la semana anterior.** No va.\n", encoding="utf-8")
+    c = claves.generar("2026-11-13", _semana(), dir_=tmp_path)
+    assert c["origen"] == "editorial" and c["fecha"] == "2026-11-13"
     assert c["items"] == [{"titular": "Se modera la presión.", "bajada": "El índice bajó."},
                           {"titular": "Segunda.", "bajada": "Texto en dos líneas."}]

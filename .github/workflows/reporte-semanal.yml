@@ -1,96 +1,41 @@
-name: Reporte semanal (PDF)
+name: Claves de la semana por email
 
+# Los sábados, con el cierre del viernes ya en data/monitor.json (lo deja la
+# actualización diaria), manda las claves de la semana por email. El envío
+# automático está desactivado: se manda a mano con «Enviar las claves por
+# email». Para reactivarlo, poner ENVIO_AUTOMATICO en true; necesita los
+# secretos SMTP_USER, SMTP_PASSWORD y REPORTE_PARA.
 on:
   schedule:
-    # Sábado 10:17 hora Argentina (UTC-3), con el cierre del viernes ya
-    # descargado: el reporte queda listo antes del lunes aunque GitHub demore
-    # la corrida.
     - cron: "17 13 * * 6"
   workflow_dispatch:
-    inputs:
-      fecha:
-        description: "Fecha de referencia AAAA-MM-DD (se informa la semana anterior). Vacío = hoy; un sábado o domingo, la semana que acaba de cerrar."
-        required: false
 
 permissions:
-  contents: write
-
-concurrency:
-  group: monitor-dolarizacion
-  cancel-in-progress: false
+  contents: read
 
 env:
-  # Envío automático del reporte por email los sábados (ver el paso «Enviar
-  # por email»). Desactivado: se manda a mano.
   ENVIO_AUTOMATICO: "false"
 
 jobs:
-  reporte:
+  enviar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        if: ${{ env.ENVIO_AUTOMATICO == 'true' }}
 
       - uses: actions/setup-python@v5
+        if: ${{ env.ENVIO_AUTOMATICO == 'true' }}
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: requirements-reporte.txt
-
-      - name: Instalar dependencias
-        run: |
-          sudo apt-get update -q && sudo apt-get install -y -q fonts-inter
-          pip install -r requirements-reporte.txt pytest
-          python -m playwright install --with-deps chromium
-
-      - name: Tests
-        run: python -m pytest -q
-
-      - name: Actualizar datos
-        run: python -m monitor.build
-
-      - name: Generar el PDF
-        run: |
-          FECHA="${{ github.event.inputs.fecha }}"
-          # Sábado o domingo: se informa la semana que acaba de cerrar (la
-          # fecha de referencia es el lunes siguiente).
-          DOW=$(TZ=America/Argentina/Buenos_Aires date +%u)
-          if [ -z "$FECHA" ] && [ "$DOW" -ge 6 ]; then
-            FECHA=$(TZ=America/Argentina/Buenos_Aires date -d "+$((8 - DOW)) days" +%F)
-          fi
-          if [ -n "$FECHA" ]; then
-            python -m monitor.report --fecha "$FECHA"
-          else
-            python -m monitor.report
-          fi
-
-      - name: Guardar el PDF como artefacto de la corrida
-        uses: actions/upload-artifact@v4
-        with:
-          name: reporte-semanal
-          path: reportes/*.pdf
-
-      - name: Publicar en el repositorio
-        run: |
-          git config user.name "monitor-dolarizacion[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data reportes
-          if git diff --cached --quiet; then
-            echo "Sin cambios."
-          else
-            git commit -m "Reporte semanal: $(ls -t reportes/reporte-semanal-*.pdf | head -1 | xargs basename)"
-            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
-            git push
-          fi
+          cache-dependency-path: requirements.txt
 
       - name: Enviar por email
-        # Envío automático desactivado (pedido de la usuaria, 31/10/2026): el
-        # reporte se genera igual y se manda a mano con el workflow «Enviar
-        # reporte por email». Para reactivarlo, poner ENVIO_AUTOMATICO en true.
-        # Además necesita los secretos SMTP_USER, SMTP_PASSWORD y REPORTE_PARA.
-        if: ${{ env.ENVIO_AUTOMATICO == 'true' && env.SMTP_PASSWORD != '' }}
-        continue-on-error: true
+        if: ${{ env.ENVIO_AUTOMATICO == 'true' }}
         env:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           REPORTE_PARA: ${{ secrets.REPORTE_PARA }}
-        run: python -m monitor.enviar
+        run: |
+          pip install -r requirements.txt
+          python -m monitor.enviar
