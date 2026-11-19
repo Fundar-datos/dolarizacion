@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
-from . import config, indicators, licitaciones, sources
+from . import claves, config, indicators, licitaciones, sources
 
 log = logging.getLogger("monitor")
 
@@ -557,6 +557,12 @@ def run(offline: bool = False) -> dict:
     cambio = indicators.cambio_por_componente(out_panel, fecha, [k for k in meta if f"pts_{k}" in out_panel])
     for c in payload["ipd"]["components"]:
         c["cambio_semana"] = _clean(cambio.get(c["key"]))
+    # Qué mide cada componente (para la ayuda del tablero) y las claves de la semana.
+    from .report import APENDICE_AR
+    for c in payload["ipd"]["components"]:
+        if c["key"] in APENDICE_AR:
+            c["ayuda"] = APENDICE_AR[c["key"]][0]
+    payload["claves"] = claves.generar(payload)
     config.OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     h = payload["headline"]
     log.info("IPD %s = %s | índice 0-100 = %s (%s)", h["date"], h["ipd"], h["indice"], h["status_label"])

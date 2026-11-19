@@ -382,6 +382,7 @@ EVENTS = [
     {"date": "2025-04-14", "label": "Bandas cambiarias / fin cepo PH", "tipo": "cambiario"},
     {"date": "2025-09-07", "label": "Elecciones PBA 2025", "tipo": "electoral"},
     {"date": "2025-10-26", "label": "Legislativas 2025", "tipo": "electoral"},
+    {"date": "2026-10-25", "label": "Balotaje en Brasil", "tipo": "externo"},
     # Calendario 2027 a confirmar por la Cámara Nacional Electoral.
     {"date": "2027-10-24", "label": "Generales 2027 (a confirmar)", "tipo": "electoral"},
 ]
