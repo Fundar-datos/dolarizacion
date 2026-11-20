@@ -727,13 +727,15 @@ def test_mail_de_las_claves(tmp_path):
         "items": [{"titular": "Aumenta la presión sobre el peso.", "bajada": "El índice subió 6 puntos."}]}}), encoding="utf-8")
     m = enviar.armar_mensaje("yo@fund.ar", ["a@x.com", "b@y.com"], datos)
     assert "26 al 30 de octubre" in m["Subject"] and m["Bcc"] == "a@x.com, b@y.com"
+    assert m["Subject"].startswith("Dolarómetro")
     msg = email.message_from_bytes(bytes(m))
     partes = {p.get_content_type(): p for p in msg.walk()}
     plano = partes["text/plain"].get_payload(decode=True).decode()
-    assert "Aumenta la presión sobre el peso." in plano and "54,0/100" in plano and "Semana tranquila." in plano
+    assert "Aumenta la presión sobre el peso." in plano and "54,0 sobre 100" in plano and "+6,0 puntos" in plano
+    assert "Semana tranquila." in plano
     h = partes["text/html"].get_payload(decode=True).decode()
     assert "<b>tranquila</b>" in h and "elibman36.github.io/dolarizacion" in h
-    assert "application/pdf" not in partes and "image/png" in partes
+    assert "application/pdf" not in partes and "image/png" in partes and "Ver → Dolarómetro" in h
 
 
 def test_tope_de_peso_por_componente():
