@@ -186,6 +186,35 @@ def licitaciones_neto(offline: bool) -> pd.Series:
         return pd.Series(dtype=float)
 
 
+FACTORES_RESERVAS = {"compras": "compras_bcra", "organismos": "reservas_organismos", "tesoro": "reservas_sector_publico",
+                     "encajes": "reservas_encajes", "otros": "reservas_otros"}
+
+
+def reservas_por_origen(daily: dict, desde: str = "2010-01-01") -> list[dict]:
+    """Variación mensual de las reservas brutas por origen (factores del BCRA),
+    en millones de USD: compras de divisas, organismos internacionales, Tesoro
+    y resto del sector público, encajes y otros (incluye valuación). El mes en
+    curso va marcado como parcial."""
+    cols = {k: daily.get(v) for k, v in FACTORES_RESERVAS.items()}
+    cols = {k: s for k, s in cols.items() if s is not None and not s.dropna().empty}
+    if len(cols) < len(FACTORES_RESERVAS):
+        return []
+    df = pd.DataFrame(cols)
+    df = df[df.index >= desde].dropna(how="all")
+    if df.empty:
+        return []
+    ultimo = df.index.max()
+    m = df.resample("ME").sum(min_count=1)
+    out = []
+    for fin, r in m.iterrows():
+        fila = {"fecha": f"{fin:%Y-%m}", **{k: _clean(round(v, 1)) if pd.notna(v) else None for k, v in r.items()}}
+        fila["total"] = _clean(round(float(r.sum()), 1))
+        if fin.to_period("M") == ultimo.to_period("M"):
+            fila["parcial_al"] = f"{ultimo:%Y-%m-%d}"
+        out.append(fila)
+    return out
+
+
 def load_licitaciones_dl(offline: bool) -> list[dict]:
     """Totales por licitación (ofrecido y adjudicado en dólar linked), para el
     gráfico del tablero. La descarga la hace licitaciones_neto."""
@@ -531,6 +560,7 @@ def run(offline: bool = False) -> dict:
                 **indicators.reservas_netas_mensual(posicion_bcra, load_fmi_programa(offline))}
     payload = build_payload(panel, ipd, compras, status, publicar, flujos=load_flujos_financieros())
     payload["monthly"]["licitaciones_dl"] = load_licitaciones_dl(offline)
+    payload["monthly"]["reservas_factores"] = reservas_por_origen(daily)
 
     # Panel diario completo, útil para análisis en Excel / R / Stata.
     out_panel = panel.copy()

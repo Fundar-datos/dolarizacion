@@ -9,6 +9,10 @@
  "pases_1d": "1996-01-01",
  "posicion_futuros_bcra_no_disponibles": [],
  "reservas": "1996-01-01",
+ "reservas_encajes": "1996-01-01",
+ "reservas_organismos": "1996-01-01",
+ "reservas_otros": "1996-01-01",
+ "reservas_sector_publico": "1996-01-01",
  "tamar": "1996-01-01",
  "tc_a3500": "1996-01-01"
 }

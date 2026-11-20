@@ -74,6 +74,37 @@ BCRA_VARIABLES = {
         "unit": "millones de USD",
         "optional": True,
     },
+    # El resto de los factores de variación de las reservas (las compras son
+    # compras_bcra): para el gráfico de por qué se movieron las reservas. No
+    # entran al índice. Los cinco suman la variación diaria de las brutas.
+    "reservas_organismos": {
+        "id": 79,
+        "regex": r"variaci[oó]n de reservas internacionales por operaciones con organismos",
+        "label": "Variación de reservas por operaciones con organismos internacionales",
+        "unit": "millones de USD",
+        "optional": True,
+    },
+    "reservas_sector_publico": {
+        "id": 80,
+        "regex": r"variaci[oó]n de reservas internacionales por otras operaciones del sector p",
+        "label": "Variación de reservas por otras operaciones del sector público",
+        "unit": "millones de USD",
+        "optional": True,
+    },
+    "reservas_encajes": {
+        "id": 81,
+        "regex": r"variaci[oó]n de reservas internacionales por efectivo m",
+        "label": "Variación de reservas por efectivo mínimo (encajes)",
+        "unit": "millones de USD",
+        "optional": True,
+    },
+    "reservas_otros": {
+        "id": 82,
+        "regex": r"variaci[oó]n de reservas internacionales por otras operaciones no incluidas",
+        "label": "Variación de reservas por otras operaciones (incluye valuación)",
+        "unit": "millones de USD",
+        "optional": True,
+    },
     # CER: sigue al IPC día a día; sirve para descontar la inflación de la
     # depreciación del oficial.
     "cer": {

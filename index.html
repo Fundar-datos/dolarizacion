@@ -302,6 +302,13 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 
   <h2 class="section-title"><b>05</b>Indicadores de menor frecuencia</h2>
   <section class="grid1">
+    <div class="card con-tools" id="g-reservas-origen" data-chart="c-res" data-titulo="Por qué se movieron las reservas" data-nota="Variación mensual de las reservas brutas por origen, en millones de USD." data-fuente="BCRA, factores de variación de las reservas internacionales">
+      <span class="tools"></span>
+      <h2>Por qué se movieron las reservas<span class="ayuda" tabindex="0" data-tip="El BCRA explica cada día la variación de las reservas brutas por su origen. Compras: dólares que compra en el mercado. Organismos: pagos y desembolsos del FMI, el BID y otros. Tesoro: compras de dólares y pagos del Tesoro y el resto del sector público. Encajes: cambios en los dólares que los bancos dejan en el BCRA. Otros: valuación del oro y las monedas, pases y swaps.">?</span></h2>
+      <p class="note">Variación de las reservas brutas en cada mes, por origen, en millones de USD. La línea es la variación total. <span id="res-nota"></span></p>
+      <div class="kv" id="res-kv"></div>
+      <div class="chart" id="c-res" role="img" aria-label="Variación mensual de las reservas por origen"></div>
+    </div>
     <div class="card con-tools" id="g-compras" data-chart="c-ph" data-titulo="Compra de dólares de personas humanas" data-nota="Compras netas, en millones de USD por mes." data-fuente="BCRA, anexo del balance cambiario">
       <span class="tools"></span>
       <h2>Compra de dólares de ahorristas (personas humanas)<span class="ayuda" tabindex="0" data-tip="Compras netas de dólares de personas humanas en el mercado oficial (formación de activos externos, FAE), según el balance cambiario del BCRA. Entra al índice comparada con su promedio de 12 meses.">?</span></h2>
@@ -327,7 +334,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
         <ul>
           <li><button class="btn" type="button" data-csv="todo">Descargar todos los datos (CSV)</button></li>
         </ul>
-        <p class="note" style="margin-top:8px">Un archivo con una fila por día: el índice, los subíndices y las 20 variables. Las series mensuales (compras de dólares de personas humanas, reservas netas) van en el último día de cada mes y las licitaciones, en su fecha.</p>
+        <p class="note" style="margin-top:8px">Un archivo con una fila por día: el índice, los subíndices y las 20 variables. Las series mensuales (compras de dólares de personas humanas, reservas netas, variación de las reservas por origen) van en el último día de cada mes y las licitaciones, en su fecha.</p>
       </div>
       <div>
         <h2>Recibí las claves de la semana</h2>
@@ -990,6 +997,52 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     }
   }
 
+  const ORIGENES = [["compras", "Compras del BCRA", "--s1"], ["organismos", "Organismos internacionales", "--s2"],
+    ["tesoro", "Tesoro y sector público", "--s3"], ["encajes", "Encajes", "--s4"], ["otros", "Otros (valuación, pases)", "--s5"]];
+  function renderReservasOrigen() {
+    const fx = (DATA.monthly && DATA.monthly.reservas_factores) || [];
+    if (!fx.length) { document.getElementById("res-kv").innerHTML = ""; return emptyState("c-res", "Sin datos todavía."); }
+    const u = fx[fx.length - 1];
+    const mesTxt = (f) => new Date(f + "-15T12:00:00").toLocaleDateString("es-AR", { month: "long", year: "numeric" });
+    const sg = (v) => (v > 0 ? "+" : "") + nf(v, 0);
+    document.getElementById("res-nota").textContent = u.parcial_al
+      ? `${mesTxt(u.fecha)[0].toUpperCase() + mesTxt(u.fecha).slice(1)}: datos hasta el ${new Date(u.parcial_al + "T12:00:00").toLocaleDateString("es-AR", { day: "numeric", month: "long" })}.` : "";
+    document.getElementById("res-kv").innerHTML = `<span>${u.parcial_al ? "En lo que va de " + mesTxt(u.fecha) : mesTxt(u.fecha)}</span><b>${sg(u.total)} M USD</b>` +
+      ORIGENES.map(([k, n]) => `<span>${n}</span><b>${sg(u[k] || 0)} M USD</b>`).join("");
+    const c = mount("c-res");
+    const days = rangeDays ? Math.max(rangeDays, 730) : 0;
+    const fromM = days ? new Date(new Date(u.fecha + "-01") - days * 864e5).toISOString().slice(0, 7) : fx[0].fecha;
+    const desde = (fx.find((r) => r.fecha >= fromM) || fx[0]).fecha;
+    const byM = new Map(fx.map((r) => [r.fecha, r]));
+    c.setOption({
+      animation: false, textStyle: { fontFamily: css("--font"), color: css("--ink-2") },
+      grid: { left: 8, right: 16, top: 40, bottom: 34, containLabel: true },
+      dataZoom: [
+        { type: "inside", xAxisIndex: 0, filterMode: "filter", startValue: desde },
+        { type: "slider", xAxisIndex: 0, filterMode: "filter", startValue: desde, height: 14, bottom: 4, showDetail: false,
+          borderColor: css("--border"), fillerColor: css("--wash"), backgroundColor: "transparent",
+          dataBackground: { lineStyle: { color: css("--axis") }, areaStyle: { color: css("--wash") } },
+          handleStyle: { color: css("--surface"), borderColor: css("--axis") }, moveHandleStyle: { color: css("--axis") } },
+      ],
+      tooltip: {
+        trigger: "axis", confine: true, backgroundColor: css("--tt-bg"), borderColor: css("--tt-bg"), borderRadius: 8, padding: [8, 10],
+        textStyle: { color: css("--tt-ink"), fontSize: 12 },
+        formatter: (ps) => {
+          const r = byM.get(ps[0].name);
+          return `${mesTxt(r.fecha)}${r.parcial_al ? " (parcial)" : ""}<br><b>Total: ${sg(r.total)} M USD</b>` +
+            ORIGENES.map(([k, n, col]) => `<br><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${css(col)};margin-right:5px"></span>${n}: ${sg(r[k] || 0)}`).join("");
+        },
+      },
+      xAxis: { type: "category", data: fx.map((r) => r.fecha), axisTick: { show: false }, axisLine: { lineStyle: { color: css("--axis") } }, axisLabel: { color: css("--muted"), fontSize: 11, hideOverlap: true } },
+      yAxis: { type: "value", axisLabel: { color: css("--muted"), fontSize: 11, formatter: (v) => nf(v, 0) }, splitLine: { lineStyle: { color: css("--grid") } } },
+      legend: { top: 0, left: 0, icon: "roundRect", itemWidth: 12, itemHeight: 8, textStyle: { color: css("--ink-2"), fontSize: 12 } },
+      series: [
+        ...ORIGENES.map(([k, n, col]) => ({ name: n, type: "bar", stack: "o", barMaxWidth: 22, data: fx.map((r) => r[k]), itemStyle: { color: css(col) } })),
+        { name: "Variación total", type: "line", data: fx.map((r) => r.total), showSymbol: true, symbolSize: 5, lineStyle: { width: 1.8, color: css("--ink") }, itemStyle: { color: css("--ink") }, z: 5 },
+      ],
+    });
+  }
+
   function renderLicitaciones() {
     const lic = (DATA.monthly && DATA.monthly.licitaciones_dl) || [];
     if (!lic.length) { document.getElementById("dl-kv").innerHTML = ""; return emptyState("c-dl", "Sin datos de licitaciones todavía."); }
@@ -1053,7 +1106,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 
   function renderCharts() {
     charts.length = 0;
-    renderIndex(); renderBlocks(); renderContrib(); renderMultiples(); renderMonthly(); renderLicitaciones();
+    renderIndex(); renderBlocks(); renderContrib(); renderMultiples(); renderReservasOrigen(); renderMonthly(); renderLicitaciones();
   }
 
   // Futuros siempre en dólares: cada contrato es de USD 1.000.
@@ -1265,6 +1318,10 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
      ["netas_usd_millones", "Compras netas de dólares de personas humanas, mes (millones de USD)"],
      ["netas_prom_12m", "Compras netas de personas humanas, promedio 12 meses (millones de USD)"]]
       .forEach(([k, n]) => { if (ph.some((r) => r[k] != null)) cols.push([n, ph.map((r) => [finDeMes(r.fecha), r[k]])]); });
+    const fxr = (DATA.monthly && DATA.monthly.reservas_factores) || [];
+    ORIGENES.concat([["total", "Variación total"]]).forEach(([k, n]) => {
+      if (fxr.some((r) => r[k] != null)) cols.push([`Reservas: variación en el mes por ${k === "total" ? "todos los orígenes" : n.toLowerCase()} (millones de USD)`, fxr.filter((r) => !r.parcial_al).map((r) => [finDeMes(r.fecha), r[k]])]);
+    });
     const lic = (DATA.monthly && DATA.monthly.licitaciones_dl) || [];
     [["ofertado_usd", "Licitación dólar linked: ofrecido (millones de USD VN)"],
      ["adjudicado_usd", "Licitación dólar linked: adjudicado (millones de USD VN)"],
