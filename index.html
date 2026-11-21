@@ -140,6 +140,8 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .clave { border-top: 2px solid var(--ink); padding-top: 9px; }
 .clave b { display: block; font-size: 16px; line-height: 1.3; margin-bottom: 4px; }
 .clave p { margin: 0; color: var(--ink-2); font-size: 14px; }
+.clave.noticia { border-top-color: var(--up-bad); }
+.clave .tema { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--up-bad); font-weight: 600; margin-bottom: 4px; }
 .claves-pie { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; margin-top: 16px; }
 .claves-pie a.ir { color: var(--ink); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--verde); }
 .claves-pie a.ir:hover { color: var(--verde); }
@@ -651,7 +653,10 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     box.hidden = false;
     document.getElementById("claves-fecha").textContent = cl.semana_txt || cl.fecha_txt || "";
     const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;");
-    document.getElementById("claves-items").innerHTML = cl.items.map((it) =>
+    const dia = (f) => new Date(f + "T12:00:00").toLocaleDateString("es-AR", { weekday: "long", day: "numeric" });
+    document.getElementById("claves-items").innerHTML = (cl.noticias || []).map((it) =>
+      `<div class="clave noticia"><span class="tema">Noticia · ${dia(it.fecha)}</span><b>${esc(it.titular)}</b><p>${esc(it.bajada)}</p></div>`).join("") +
+      cl.items.map((it) =>
       `<div class="clave"><b>${esc(it.titular)}${ayuda(it.ayuda)}</b><p>${esc(it.bajada)}</p></div>`).join("");
     document.getElementById("claves-origen").textContent = cl.origen === "editorial"
       ? "Lectura de Fundar." : "";
@@ -663,7 +668,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   function textoClaves() {
     const cl = DATA.claves;
     return `Dolarómetro de Fundar · Las claves de la semana del ${cl.semana_txt}\n\n` +
-      cl.items.map((it) => `• ${it.titular} ${it.bajada}`).join("\n") + `\n\n${PUBLICO}`;
+      (cl.noticias || []).concat(cl.items).map((it) => `• ${it.titular} ${it.bajada}`).join("\n") + `\n\n${PUBLICO}`;
   }
 
   function renderTiles() {
@@ -1245,7 +1250,7 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     const h = { indice: cl.indice, indice_7d: cl.indice_previo, status_label: tr ? tr.label : "" };
     const W = 1080, S = 2, M = 72, ancho = W - 2 * M;
     const cv = document.createElement("canvas"); const ctx = cv.getContext("2d");
-    const bloques = cl.items.map((it) => {
+    const bloques = (cl.noticias || []).concat(cl.items).map((it) => {
       ctx.font = `700 38px ${MARCA.f}`; const t = envolver(ctx, it.titular, ancho);
       ctx.font = `400 29px ${MARCA.f}`; const b = envolver(ctx, it.bajada, ancho);
       return { t, b, alto: 26 + t.length * 46 + 8 + b.length * 39 + 34 };

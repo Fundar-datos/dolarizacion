@@ -173,7 +173,7 @@ def armar_mensaje(remitente: str, para: list[str], datos: Path | None = None) ->
         cl3 = items[2] if len(items) > 2 else None
         cifras.append((_n(b["v1"], 1), f"en el subíndice de {b['label'].lower()}.",
                        cl3["bajada"] if cl3 else "", cl3["titular"] if cl3 else ""))
-    resto = items[3:]
+    resto = list(cl.get("noticias") or []) + items[3:]
 
     plano = [f"DOLARÓMETRO · LA SEMANA DEL {semana.upper()}", "",
              "Seguimos semana a semana la presión sobre el peso y la demanda de cobertura en dólares en la Argentina.", ""]

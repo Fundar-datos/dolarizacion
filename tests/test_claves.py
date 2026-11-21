@@ -35,3 +35,11 @@ def test_claves_editoriales(tmp_path):
     assert c["origen"] == "editorial" and c["fecha"] == "2026-11-13"
     assert c["items"] == [{"titular": "Se modera la presión.", "bajada": "El índice bajó."},
                           {"titular": "Segunda.", "bajada": "Texto en dos líneas."}]
+
+
+def test_noticias_se_suman(tmp_path):
+    (tmp_path / "2026-11-20-noticia.md").write_text("**El riesgo país superó los 1.000 puntos.** Saltó 14%.\n", encoding="utf-8")
+    (tmp_path / "2026-11-13-noticia.md").write_text("**De otra semana.** No va.\n", encoding="utf-8")
+    c = claves.generar("2026-11-20", _semana(), dir_=tmp_path)
+    assert c["origen"] == "automatico" and len(c["items"]) >= 3
+    assert c["noticias"] == [{"titular": "El riesgo país superó los 1.000 puntos.", "bajada": "Saltó 14%.", "fecha": "2026-11-20"}]

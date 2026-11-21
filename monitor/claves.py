@@ -73,6 +73,17 @@ def etiqueta_semana(viernes: str) -> str:
     return f"{lu.day} de {MESES[lu.month - 1]} al {v.day} de {MESES[v.month - 1]}"
 
 
+def _leer(f: Path) -> list[dict]:
+    txt = re.sub(r"<!--.*?-->", "", f.read_text(encoding="utf-8"), flags=re.S).strip()
+    items = []
+    for b in re.split(r"\n\s*\n", txt):
+        b = " ".join(l.strip() for l in b.splitlines() if l.strip())
+        m = re.match(r"\*\*(.+?)\*\*\s*(.*)", b)
+        if m:
+            items.append({"titular": m.group(1).strip(), "bajada": m.group(2).strip()})
+    return items
+
+
 def editoriales(viernes: str, dir_: Path | None = None) -> tuple[str, list[dict]] | None:
     """El texto editorial de la semana que cierra `viernes`: un archivo con
     fecha entre ese viernes y el jueves siguiente."""
@@ -87,16 +98,30 @@ def editoriales(viernes: str, dir_: Path | None = None) -> tuple[str, list[dict]
             continue
         if not (v <= fd <= v + timedelta(days=6)):
             continue
-        txt = re.sub(r"<!--.*?-->", "", f.read_text(encoding="utf-8"), flags=re.S).strip()
-        items = []
-        for b in re.split(r"\n\s*\n", txt):
-            b = " ".join(l.strip() for l in b.splitlines() if l.strip())
-            m = re.match(r"\*\*(.+?)\*\*\s*(.*)", b)
-            if m:
-                items.append({"titular": m.group(1).strip(), "bajada": m.group(2).strip()})
+        items = _leer(f)
         if items:
             return f.stem, items
     return None
+
+
+def noticias(viernes: str, dir_: Path | None = None) -> list[dict]:
+    """Hechos de la semana que se suman a las claves (no las reemplazan):
+    reportes/claves/AAAA-MM-DD-noticia.md con la fecha del día del hecho, de
+    lunes a viernes de la semana que cierra `viernes`. Mismo formato que las
+    claves: un párrafo por hecho, con el titular en negrita."""
+    d = dir_ or CLAVES_DIR
+    if not d.exists():
+        return []
+    v = date.fromisoformat(viernes)
+    out = []
+    for f in sorted(d.glob("????-??-??-noticia*.md")):
+        try:
+            fd = date.fromisoformat(f.name[:10])
+        except ValueError:
+            continue
+        if v - timedelta(days=4) <= fd <= v:
+            out += [{**it, "fecha": f.name[:10]} for it in _leer(f)]
+    return out
 
 
 def _automaticas(semana: dict) -> list[dict]:
@@ -164,6 +189,7 @@ def generar(viernes: str, semana: dict, dir_: Path | None = None, texto: str = "
     base = {"fecha": viernes, "semana_txt": etiqueta_semana(viernes), "fecha_txt": _fecha(viernes),
             "indice": semana.get("i1"), "indice_previo": semana.get("i0"),
             "bloques": semana.get("bloques") or {}, "texto": texto}
+    base["noticias"] = noticias(viernes, dir_)
     ed = editoriales(viernes, dir_)
     if ed:
         return {**base, "origen": "editorial", "items": ed[1]}
