@@ -13,6 +13,7 @@ import logging
 import math
 from datetime import datetime, timezone
 
+import numpy as np
 import pandas as pd
 
 from . import claves, config, indicators, licitaciones, sources
@@ -489,6 +490,12 @@ def build_payload(panel: pd.DataFrame, ipd: dict, compras: pd.DataFrame,
     _, pct = _last(ipd["percentil"])
     d_ind, v_ind = _last(ipd["indice"])
     st_key, st_label = indicators.status_for(v_ind)
+    # Dato del día: dónde quedaría el índice si los datos de hoy se repitieran
+    # todo el período del promedio (el IPD de hoy, sin promediar, en la misma
+    # escala). Es una señal de hacia dónde tira, no un pronóstico.
+    sig = ipd["indice_sigma"]
+    v_dia = (_clean(50 * (1 + math.erf(v_ipd / sig / math.sqrt(2))))
+             if v_ipd is not None and sig and np.isfinite(sig) else None)
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -509,6 +516,7 @@ def build_payload(panel: pd.DataFrame, ipd: dict, compras: pd.DataFrame,
         "headline": {
             "date": d_ipd, "ipd": v_ipd, "percentile": pct,
             "indice": v_ind, "indice_7d": _last(ipd["indice"], 7)[1], "indice_30d": _last(ipd["indice"], 30)[1],
+            "indice_dia": v_dia,
             "status": st_key, "status_label": st_label,
             "ipd_7d": _last(ipd["ipd"], 7)[1], "ipd_30d": _last(ipd["ipd"], 30)[1],
         },
