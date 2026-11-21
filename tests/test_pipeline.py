@@ -731,7 +731,8 @@ def test_mail_de_las_claves(tmp_path):
     msg = email.message_from_bytes(bytes(m))
     partes = {p.get_content_type(): p for p in msg.walk()}
     plano = partes["text/plain"].get_payload(decode=True).decode()
-    assert "Aumenta la presión sobre el peso." in plano and "54,0 sobre 100" in plano and "+6,0 puntos" in plano
+    assert "Aumenta la presión sobre el peso." in plano and "Índice de Dolarización: 54,0" in plano
+    assert "Presión cambiaria: 60,0 (↑ 5,0 pts" in plano
     assert "Semana tranquila." in plano
     h = partes["text/html"].get_payload(decode=True).decode()
     assert "<b>tranquila</b>" in h and "elibman36.github.io/dolarizacion" in h

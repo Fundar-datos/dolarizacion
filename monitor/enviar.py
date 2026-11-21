@@ -149,7 +149,6 @@ def armar_mensaje(remitente: str, para: list[str], datos: Path | None = None) ->
         raise SystemExit("No hay claves de la semana en los datos: corré monitor.build.")
     semana = cl.get("semana_txt") or cl.get("fecha", "")
     i1, i0 = cl.get("indice"), cl.get("indice_previo")
-    bloques = [b for b in (cl.get("bloques") or {}).values() if b.get("v1") is not None]
 
     # La bajada la puede escribir la usuaria en reportes/claves/<viernes>.md.
     intro = cl.get("bajada") or "Seguimos semana a semana la presión sobre el peso y la demanda de cobertura en dólares en la Argentina."
@@ -160,30 +159,32 @@ def armar_mensaje(remitente: str, para: list[str], datos: Path | None = None) ->
     m["To"] = remitente
     m["Bcc"] = ", ".join(para)
 
-    # Las tres cifras: el índice, su cambio en la semana y el subíndice más
-    # lejos de 50. Debajo de cada una, una clave.
+    # Las cifras: el índice y los tres subíndices al viernes, con su cambio
+    # contra el viernes anterior y los colores del tablero. Debajo, las claves.
+    colores = {"cambiaria": "#1F6B4E", "dolarizacion": "#E46E6B", "extranjerizacion": "#5E97AB"}
     cifras = []
     if i1 is not None:
-        cifras.append((_n(i1, 1), "sobre 100 en el Índice de Dolarización.",
-                       f"Zona {_tramo(i1).lower()}: 50 es neutral; arriba hay presión sobre el peso y abajo, alivio.",
-                       items[0]["titular"]))
-    if i1 is not None and i0 is not None:
-        cifras.append((_signo(i1 - i0), "puntos en la semana.",
-                       items[1]["bajada"] if len(items) > 1 else items[0]["bajada"],
-                       items[1]["titular"] if len(items) > 1 else ""))
-    if bloques:
-        b = max(bloques, key=lambda b: abs(b["v1"] - 50))
-        cl3 = items[2] if len(items) > 2 else None
-        cifras.append((_n(b["v1"], 1), f"en el subíndice de {b['label'].lower()}.",
-                       cl3["bajada"] if cl3 else "", cl3["titular"] if cl3 else ""))
-    resto = list(cl.get("noticias") or []) + items[3:]
+        cifras.append((_n(i1, 1), "Índice de Dolarización", i1 - i0 if i0 is not None else None, INK))
+    for k, b in (cl.get("bloques") or {}).items():
+        if b.get("v1") is not None:
+            v0 = b.get("v0")
+            cifras.append((_n(b["v1"], 1), b["label"], b["v1"] - v0 if v0 is not None else None, colores.get(k, INK)))
+    claves = list(cl.get("noticias") or []) + items
+
+    def _delta(dv):
+        if dv is None:
+            return "", MUTED
+        if abs(dv) < 0.05:
+            return "sin cambios", MUTED
+        return f"{'↑' if dv > 0 else '↓'} {_n(abs(dv), 1)} pts", "#C4505A" if dv > 0 else "#2E8A66"
 
     plano = [f"DOLARÓMETRO · LA SEMANA DEL {semana.upper()}", "",
-             intro, ""]
-    for num, etiqueta, expl, tit in cifras:
-        plano += [f"{num} {etiqueta}", f"  {expl}", f"  {tit}".rstrip(), ""]
-    for it in resto:
-        plano += [f"→ {it['titular']} {it['bajada']}", ""]
+             intro, "", "Al cierre del viernes (de 0 a 100; 50 es neutral):"]
+    for num, nombre, dv, _ in cifras:
+        plano.append(f"- {nombre}: {num} ({_delta(dv)[0] or 's/d'} frente al viernes anterior)")
+    plano.append("")
+    for it in claves:
+        plano += [f"• {it['titular']} {it['bajada']}", ""]
     if cl.get("texto"):
         plano += ["¿QUÉ PASÓ EN LA SEMANA?", "", _texto_plano(cl["texto"]), ""]
     plano += [f"Ver el Dolarómetro: {TABLERO}", "", "Fundar · Buenos Aires, Argentina"]
@@ -195,14 +196,16 @@ def armar_mensaje(remitente: str, para: list[str], datos: Path | None = None) ->
     col = (100 // max(len(cifras), 1))
     cifras_html = "".join(
         f"<td valign='top' width='{col}%' style='padding:0 8px 0 0'>"
-        f"<div style='{p};font-size:22px;font-weight:700;color:{ROSA};line-height:1.1'>{html.escape(num)}</div>"
-        f"<div style='{p};font-size:12px;font-weight:700;color:{ROSA};line-height:1.35;margin-top:6px'>{html.escape(et)}</div>"
-        f"<div style='{p};font-size:11px;color:{ROSA};line-height:1.45;margin-top:14px'>{html.escape(ex)}</div>"
-        + (f"<div style='{p};font-size:11px;font-weight:700;color:{ROSA};line-height:1.45;margin-top:6px'>{html.escape(ti)}</div>" if ti else "")
-        + "</td>" for num, et, ex, ti in cifras)
-    resto_html = "".join(
-        f"<p style='{p};font-size:12px;line-height:1.5;color:{INK};margin-top:12px'>→ <b>{html.escape(it['titular'])}</b> {html.escape(it['bajada'])}</p>"
-        for it in resto)
+        f"<div style='height:4px;background:{color};margin-bottom:8px'></div>"
+        f"<div style='{p};font-size:24px;font-weight:700;color:{color};line-height:1.1'>{html.escape(num)}</div>"
+        f"<div style='{p};font-size:11px;font-weight:700;color:{INK};line-height:1.3;margin-top:6px'>{html.escape(nombre)}</div>"
+        f"<div style='{p};font-size:11px;font-weight:700;color:{_delta(dv)[1]};line-height:1.3;margin-top:4px'>{_delta(dv)[0]}</div></td>"
+        for num, nombre, dv, color in cifras)
+    resto_html = (f"<p style='{p};font-size:10.5px;color:{MUTED};margin-top:10px'>Al cierre del viernes, de 0 a 100: 50 es neutral; "
+                  f"arriba hay presión sobre el peso y abajo, alivio. El cambio es contra el viernes anterior.</p>"
+                  + "".join(
+        f"<p style='{p};font-size:12.5px;line-height:1.55;color:{INK2};margin-top:14px'><b style='color:{INK}'>{html.escape(it['titular'])}</b> {html.escape(it['bajada'])}</p>"
+        for it in claves))
     texto_html = ""
     if cl.get("texto"):
         t = re.sub(r"<p>", f"<p style='{p};font-size:12px;line-height:1.55;color:{INK2};margin-bottom:10px'>", cl["texto"])
