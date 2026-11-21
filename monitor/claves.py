@@ -73,15 +73,20 @@ def etiqueta_semana(viernes: str) -> str:
     return f"{lu.day} de {MESES[lu.month - 1]} al {v.day} de {MESES[v.month - 1]}"
 
 
-def _leer(f: Path) -> list[dict]:
+def _leer(f: Path, con_intro: bool = False):
+    """Las claves de un archivo: un párrafo por clave, con el titular en
+    negrita. Con `con_intro`, también los párrafos sin negrita que van antes
+    de la primera clave: la bajada del mail."""
     txt = re.sub(r"<!--.*?-->", "", f.read_text(encoding="utf-8"), flags=re.S).strip()
-    items = []
+    items, intro = [], []
     for b in re.split(r"\n\s*\n", txt):
         b = " ".join(l.strip() for l in b.splitlines() if l.strip())
         m = re.match(r"\*\*(.+?)\*\*\s*(.*)", b)
         if m:
             items.append({"titular": m.group(1).strip(), "bajada": m.group(2).strip()})
-    return items
+        elif b and not items:
+            intro.append(b)
+    return (items, " ".join(intro)) if con_intro else items
 
 
 def editoriales(viernes: str, dir_: Path | None = None) -> tuple[str, list[dict]] | None:
@@ -98,9 +103,9 @@ def editoriales(viernes: str, dir_: Path | None = None) -> tuple[str, list[dict]
             continue
         if not (v <= fd <= v + timedelta(days=6)):
             continue
-        items = _leer(f)
-        if items:
-            return f.stem, items
+        items, intro = _leer(f, con_intro=True)
+        if items or intro:
+            return f.stem, items, intro
     return None
 
 
@@ -192,5 +197,8 @@ def generar(viernes: str, semana: dict, dir_: Path | None = None, texto: str = "
     base["noticias"] = noticias(viernes, dir_)
     ed = editoriales(viernes, dir_)
     if ed:
-        return {**base, "origen": "editorial", "items": ed[1]}
+        # Sin claves en el archivo (sólo la bajada), quedan las automáticas.
+        base["bajada"] = ed[2]
+        if ed[1]:
+            return {**base, "origen": "editorial", "items": ed[1]}
     return {**base, "origen": "automatico", "items": _automaticas(semana)}

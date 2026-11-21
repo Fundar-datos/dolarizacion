@@ -43,3 +43,12 @@ def test_noticias_se_suman(tmp_path):
     c = claves.generar("2026-11-20", _semana(), dir_=tmp_path)
     assert c["origen"] == "automatico" and len(c["items"]) >= 3
     assert c["noticias"] == [{"titular": "El riesgo país superó los 1.000 puntos.", "bajada": "Saltó 14%.", "fecha": "2026-11-20"}]
+
+
+def test_bajada_del_mail(tmp_path):
+    (tmp_path / "2026-11-20.md").write_text("Semana de tensión.\n\n**Clave uno.** Texto.\n", encoding="utf-8")
+    c = claves.generar("2026-11-20", _semana(), dir_=tmp_path)
+    assert c["bajada"] == "Semana de tensión." and c["items"] == [{"titular": "Clave uno.", "bajada": "Texto."}]
+    (tmp_path / "2026-11-20.md").write_text("Sólo la bajada.\n", encoding="utf-8")
+    c = claves.generar("2026-11-20", _semana(), dir_=tmp_path)
+    assert c["bajada"] == "Sólo la bajada." and c["origen"] == "automatico"

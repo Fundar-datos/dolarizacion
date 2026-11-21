@@ -151,6 +151,9 @@ def armar_mensaje(remitente: str, para: list[str], datos: Path | None = None) ->
     i1, i0 = cl.get("indice"), cl.get("indice_previo")
     bloques = [b for b in (cl.get("bloques") or {}).values() if b.get("v1") is not None]
 
+    # La bajada la puede escribir la usuaria en reportes/claves/<viernes>.md.
+    intro = cl.get("bajada") or "Seguimos semana a semana la presión sobre el peso y la demanda de cobertura en dólares en la Argentina."
+
     m = EmailMessage()
     m["Subject"] = f"Dolarómetro · La semana del {semana}"
     m["From"] = remitente
@@ -176,7 +179,7 @@ def armar_mensaje(remitente: str, para: list[str], datos: Path | None = None) ->
     resto = list(cl.get("noticias") or []) + items[3:]
 
     plano = [f"DOLARÓMETRO · LA SEMANA DEL {semana.upper()}", "",
-             "Seguimos semana a semana la presión sobre el peso y la demanda de cobertura en dólares en la Argentina.", ""]
+             intro, ""]
     for num, etiqueta, expl, tit in cifras:
         plano += [f"{num} {etiqueta}", f"  {expl}", f"  {tit}".rstrip(), ""]
     for it in resto:
@@ -219,7 +222,7 @@ def armar_mensaje(remitente: str, para: list[str], datos: Path | None = None) ->
 <tr><td align="center" style="padding:28px 12px 32px">
 <table role="presentation" width="{ANCHO}" cellpadding="0" cellspacing="0" style="max-width:{ANCHO}px;width:100%">
   <tr><td><h1 style="{p};font-size:19px;font-weight:700;color:{INK}">Dolarómetro</h1>
-    <p style="{p};font-size:12px;font-weight:700;line-height:1.5;color:{INK};margin-top:14px">Seguimos semana a semana la presión sobre el peso y la demanda de cobertura en dólares en la Argentina.</p>
+    <p style="{p};font-size:12px;font-weight:700;line-height:1.5;color:{INK};margin-top:14px">{html.escape(intro)}</p>
     <p style="{p};font-size:11.5px;line-height:1.55;color:{INK2};margin-top:10px">El Índice de Dolarización resume 14 indicadores del mercado de cambios, las reservas, la tasa en pesos, los futuros de dólar, los depósitos en dólares y la deuda en una escala de 0 a 100. Se calcula todos los días con datos del BCRA, ArgentinaDatos, A3 Mercados y la Secretaría de Finanzas.</p></td></tr>
   <tr><td style="padding:34px 0 18px"><h2 style="{p};font-size:16px;font-weight:700;color:{INK}">¿Qué nos dice la última semana ({html.escape(semana)})?</h2></td></tr>
   <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>{cifras_html}</tr></table>{resto_html}</td></tr>
