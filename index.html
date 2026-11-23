@@ -244,8 +244,9 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     <div class="claves-head">
       <div><span class="eyebrow">Las claves de la semana | <span id="claves-fecha"></span></span><h2 class="claves-t" id="claves-t">El dólar, bajo la lupa</h2><p class="claves-bajada" id="claves-bajada" hidden></p></div>
       <div class="acciones">
-        <button class="btn-mini" id="claves-copiar" type="button">Copiar texto</button>
-        <button class="btn-mini" id="claves-tarjeta" type="button">Descargar tarjeta para redes</button>
+        <!-- Herramientas internas (para el equipo): ocultas en el sitio público; monitor.artefacto las muestra en la versión de claude.ai. -->
+        <button class="btn-mini" id="claves-copiar" type="button" hidden data-interno>Copiar texto</button>
+        <button class="btn-mini" id="claves-tarjeta" type="button" hidden data-interno>Descargar tarjeta para redes</button>
       </div>
     </div>
     <div class="claves-items" id="claves-items"></div>

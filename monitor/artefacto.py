@@ -41,6 +41,9 @@ def armar(variante: str, salida: Path) -> Path:
     t = re.sub(r'<meta name="description"[^>]*>\n?', "", t)
     t = t.replace("</head>\n<body>\n", "")
     t = t.replace("</body>\n</html>", "")
+    # Las herramientas internas (copiar las claves, tarjeta para redes) sólo
+    # se ven en la versión de claude.ai, que usa el equipo.
+    t = t.replace(" hidden data-interno", " data-interno")
     if v["titulo"]:
         t = t.replace("<title>Dolarómetro</title>", f"<title>Dolarómetro ({v['corto']})</title>", 1)
         t = t.replace("<h1>Dolarómetro</h1>", f"<h1>Dolarómetro · {v['titulo']}</h1>", 1)
